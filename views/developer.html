@@ -1,0 +1,16 @@
+<div class="containers" id="devCon" data-ng-repeat="coder in coders">
+<h1>{{coder.Title}}</h1>
+	<div id="selfHolder">
+		<h3>{{coder.Name}}</h3>
+		<img data-ng-src="{{coder.Photo}}">
+	</div>
+	<ul>
+		<li>{{coder.Jobs[0]}}</li>
+		<li>{{coder.Jobs[1]}}</li>
+		<li>{{coder.Jobs[2]}}</li>
+		<li>{{coder.Jobs[3]}}</li>
+		<li>{{coder.Jobs[4]}}</li>
+		<li>{{coder.Jobs[5]}}</li>
+	</ul>
+	<img data-ng-src="{{coder.RESPONSIVE}}">
+</div>

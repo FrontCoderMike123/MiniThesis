@@ -1,0 +1,34 @@
+<div class="containers" id="techCon" data-ng-repeat="tech in techs">
+	<h1>{{tech.Title}}</h1>
+	<p>{{tech.Sentence}}</p>
+	<ul class="img-list">
+		<li>
+			<img data-ng-src="{{tech.HTML}}" alt="HTML5">
+			<span class="text-content"><span>{{tech.tech1}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.CSS}}" alt="CSS3">
+			<span class="text-content"><span>{{tech.tech2}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.JS}}" alt="Javascript">
+			<span class="text-content"><span>{{tech.tech3}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.MONGO}}" alt="MongoDB">
+			<span class="text-content"><span>{{tech.tech4}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.EXP}}" alt="ExpressJs">
+			<span class="text-content"><span>{{tech.tech5}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.ANGU}}" alt="AngularJs">
+			<span class="text-content"><span>{{tech.tech6}}</span></span>
+		</li>
+		<li>
+			<img data-ng-src="{{tech.NODE}}" alt="NodeJs">
+			<span class="text-content"><span>{{tech.tech7}}</span></span>
+		</li>
+	</ul>
+</div>

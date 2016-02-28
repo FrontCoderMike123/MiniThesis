@@ -1,0 +1,15 @@
+{
+	"Features":
+	[{
+		"img1":"images/features/feat1.png",
+		"img2":"images/features/feat2.png",
+		"img3":"images/features/feat3.png",
+		"img4":"images/features/feat4.png",
+		"img5":"images/features/feat5.png",
+		"shot1":"New Or Not?",
+		"shot2":"Sign Up",
+		"shot3":"Login",
+		"shot4":"Budget",
+		"shot5":"Restaurants"
+	}]
+}

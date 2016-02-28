@@ -1,0 +1,18 @@
+{
+	"Developer":
+	[{
+		"Title":"Developer",
+		"Name":"Michel Beaubien",
+		"Photo":"images/me.jpg",
+		"RESPONSIVE":"images/tools/responsive.png",
+		"Jobs":
+		[
+			"Plan",
+			"Research",
+			"Front End Code",
+			"Back End Code",
+			"Google Maps / Places API",
+			"Create User Registration & Login"
+		]
+	}]
+}

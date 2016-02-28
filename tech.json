@@ -1,0 +1,21 @@
+{
+	"Tech":
+	[{
+		"Title":"Tech",
+		"Sentence":"When it comes to building EasyEats, a lot of research goes into it. But there are some major tools involved in this creation. Below are the languages & programs that I used to develope this app.",
+		"HTML":"images/tools/html5.png",
+		"CSS":"images/tools/css3.png",
+		"JS":"images/tools/js3.png",
+		"MONGO":"images/tools/mongo.png",
+		"EXP":"images/tools/express.png",
+		"ANGU":"images/tools/angular.png",
+		"NODE":"images/tools/node.png",
+		"tech1":"HTML5",
+		"tech2":"CSS3",
+		"tech3":"JAVASCRIPT",
+		"tech4":"MONGODB",
+		"tech5":"EXPRESSJS",
+		"tech6":"ANGULARJS",
+		"tech7":"NODEJS"
+	}]
+}

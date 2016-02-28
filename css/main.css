@@ -1,0 +1,1386 @@
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Lato', sans-serif;
+}
+
+p,a,span
+{
+	font-family: 'Quicksand', sans-serif;
+}
+
+img
+{
+  max-width: 100%!important;
+}
+
+a
+{
+  text-decoration: none;
+}
+
+.hidden
+{
+  display: none;
+}
+
+#padding
+{
+  padding-bottom: 50px;
+}
+
+body
+{
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+header
+{
+  text-align: center;
+  background-color: #006699;
+  padding: .5% 0 0 0;
+}
+
+header img
+{
+  margin-bottom: .5%;
+}
+
+header li
+{
+  display: inline-block;
+  padding: 10px 20px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  border-left: thin solid rgba(0,0,0,.0);
+  border-top: thin solid rgba(0,0,0,.0);
+  border-right: thin solid rgba(0,0,0,.0);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+header li:hover
+{
+  background-color: #ffcc00;
+  border-color: white;
+}
+
+header li:hover > a
+{
+  color: #006699;
+}
+
+header a
+{
+  font-size: 1.2em;
+  color: #ebebeb;
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 98%;
+  background-color: #006699;
+  padding: 1%;
+  color: #ebebeb;
+  text-align: right;
+  overflow: hidden;
+}
+
+footer p
+{
+  float: right;
+}
+
+footer a
+{
+  color: #ffcc00;
+}
+
+footer a:hover
+{
+  color: #ebebeb;
+}
+
+footer ul
+{
+  text-align: center;
+  float: left;
+}
+
+footer li
+{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 20px;
+}
+
+.social
+{
+  background: url(../images/socialSprite.png) no-repeat;
+}
+
+.facebook{ background-position: 0px 0px;}
+.facebook:hover{ background-position: 0px -32px; }
+
+.twitter{ background-position: -32px 0px;}
+.twitter:hover{ background-position: -32px -32px; }
+
+.instagram{ background-position: -64px 0px;}
+.instagram:hover{ background-position: -64px -32px; }
+
+.containers
+{
+  width: 78%;
+  margin: 1% auto;
+  background-color: #ffcc00;
+  padding: 1%;
+  border-radius: 5px;
+  border: thin solid #006699;
+}
+
+.containers h1
+{
+  text-align: center;
+  color: #006699;
+  font-size: 2em;
+  border-bottom: thin solid #fff;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/***************ABOUT PAGE****************/
+#aboutCon p
+{
+  color: #333;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+
+.firstWord
+{
+  color: #006699;
+  font-weight: bold;
+}
+
+/***************tech PAGE****************/
+#techCon
+{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#techCon p
+{
+  color: #333;
+  font-size: 1.2em;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+ul.img-list {
+  text-align: center;
+}
+ 
+ul.img-list li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+  width: 10%;
+  cursor: pointer;
+}
+
+span.text-content {
+  color: #006699;
+  background: rgba(255,204,0,.8);
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 20% 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -moz-opacity:0;
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+}
+
+
+/***************feat PAGE****************/
+
+#featCon
+{
+  text-align: center;
+  overflow: hidden;
+}
+
+#featCon div:nth-child(2)
+{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+#featCon div:nth-child(4)
+{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#featCon div
+{
+  display: block;
+  float: left;
+  width: 33.33333333333333333%;
+  padding: 1% 0;
+  background-color: #006699;
+}
+
+.feat h3
+{
+  color: #ffcc00;
+  font-size: 1.5em;
+  width: 80%;
+  display: block;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+.feat li
+{
+  font-size: 1.2em;
+  color: #fff;
+  width: 90%;
+  display: block;
+  margin: auto;
+  padding: 2% 0;
+  border-radius: 5px;
+}
+
+.feat li:nth-child(odd)
+{
+  background-color: white;
+  color: #006699
+}
+
+#screenShots
+{
+  text-align: center;
+  width: 100%!important;
+  background: none!important;
+}
+
+#screenShots li
+{
+  display: inline-block;
+  width: 18%;
+  margin: 5px;
+}
+
+ul.shots-list {
+  text-align: center;
+}
+ 
+ul.shots-list li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+  width: 10%;
+  cursor: pointer;
+}
+
+span.shots-content {
+  color: #006699;
+  background: rgba(255,204,0,.8);
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 20% 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -moz-opacity:0;
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+ul.shots-list li:hover span.shots-content {
+  opacity: 1;
+    -moz-opacity:1;
+    -webkit-opacity:1;
+}
+
+/***************dev PAGE****************/
+#devCon
+{
+  text-align: center;
+  overflow: hidden;
+}
+
+#selfHolder
+{
+  position: relative;
+  width:230px;
+  overflow: hidden;
+  float: left;
+}
+
+#selfHolder h3
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding:3% 0;
+  background: rgba(255,201,0,.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #006699;
+}
+
+#selfHolder img
+{
+  border-radius: 5px;
+}
+
+#devCon ul
+{
+  float: left;
+  background: rgba(0,102,153,.9);
+  padding: 1%;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#devCon li
+{
+  color: #ebebeb;
+  font-size: 1.2em;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#devCon li:last-child
+{
+  margin: 0;
+}
+
+
+/*My Phone*/
+@media only screen and (max-width: 240px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    border-radius: 0px;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Android*/
+@media only screen and (min-width:241px) and  (max-width: 266px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    border-radius: 0px;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.05em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.05em;
+  }
+  
+  ul.img-list li
+  {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*iPhone4*/
+@media only screen and (min-width: 267px) and (max-width: 320px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    border-radius: 0px;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.05em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.05em;
+  }
+  
+  ul.img-list li
+  {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Blackberry*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    border-radius: 0px;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 30%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Galaxy S*/
+@media only screen and (min-width: 415px) and (max-width: 480px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    width: 25%;
+    float: left;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 30%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Kindle*/
+@media only screen and (min-width: 481px) and (max-width: 533px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    width: 25%;
+    float: left;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px 20px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 30%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Nook Tablet*/
+@media only screen and (min-width: 534px) and (max-width: 600px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    width: 25%;
+    float: left;
+    border: none;
+  }
+  
+  footer
+  {
+    position: static;
+    position: unset;
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px 20px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .break
+  {
+    display: block;
+  }
+  
+  #padding
+  {
+    padding-bottom: 0;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.15em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 30%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+  
+  #featCon
+  {
+    padding: 0;
+    width: 100%;
+    border-bottom: thin solid #ffcc00;
+  }
+  
+  #featCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #featCon div
+  {
+    width: 100%;
+    border-radius: 0!important;
+  }
+  
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Apple Ipad*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  header
+  {
+    padding:3% 0 0 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  header li
+  {
+    display: block;
+    padding: 5px 0;
+    width: 25%;
+    float: left;
+    border: none;
+  }
+  
+  footer
+  {
+    text-align: center;
+  }
+  
+  footer ul
+  {
+    float: none;
+  }
+  
+  footer li
+  {
+    display: inline-block;
+    margin:5px 20px;
+    float: none;
+  }
+  
+  footer p
+  {
+    float: none;
+    line-height: 20px;
+  }
+  
+  .containers
+  {
+    margin: 0;
+    width: 98%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #aboutCon p
+  {
+    text-align: center;
+    font-size: 1.15em;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.1em;
+  }
+  
+  ul.img-list li
+  {
+    width: 30%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  #screenShots
+  {
+    display: none!important;
+  }
+}
+
+/*Desktop1*/
+@media only screen and (min-width: 801px) and (max-width: 980px) {
+  
+  ul.img-list li
+  {
+    width: 20%;
+    margin: 0 5px 5px 5px;
+  }
+  
+  span.text-content
+  {
+    padding: 0;
+    position: static;
+    position: unset;
+    opacity: 1;
+    display: block;
+  }
+
+  .feat li
+  {
+    border-radius: 0;
+    width: 98%;
+    background: none!important;
+    color: white!important;
+    padding-left: 1%;
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+/*Desktop2*/
+@media only screen and (min-width: 981px) and (max-width: 1280px) {
+  
+}
+
+/*Desktop 3*/
+@media only screen and (min-width: 1367px) {
+}
+
+
+
+

@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mini Site - Easy Eats</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
+
+<body data-ng-app="miniSite">
+
+	<section class="mainContainer">
+
+		<div id="padding"><!--keep footer down-->
+
+		<header>
+			<a href="#/about">
+				<img src="images/logo.png" alt="EasyEats Logo">
+			</a>
+			<nav>
+			<h2 class="hidden">Easy Eats Navigation</h2>	
+			<ul>
+				<li><a ng-href="#/about">About</a></li>
+				<li><a ng-href="#/tech">Tech</a></li>
+				<li><a ng-href="#/features">Features</a></li>
+				<li><a ng-href="#/developer">Developer</a></li>
+			</ul>
+			</nav>
+		</header>
+
+		<ui-view>
+		</ui-view>
+
+		</div><!--padding-->
+
+		<footer>
+			<ul>
+				<a href="https://www.facebook.com/EasyEatzApp/" target="onblank">
+					<li class="social facebook"></li>
+				</a>
+				<a href="https://twitter.com/Easy_Eatz" target="onblank">
+					<li class="social twitter"></li>
+				</a>
+				<a href="https://www.instagram.com/easy_eatz/" target="onblank">
+					<li class="social instagram"></li>
+				</a>
+			</ul>
+<p>&copy; Copyright 2016, <span class="break"></span>EasyEatz Application. <span class="break"></span>
+<a href="http://michel-beaubien.com/" target="onblank">MB Development.</a> <span class="break"></span>All Rights Reserved.</p>
+		</footer>
+	</section>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/angular-sanitize.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
