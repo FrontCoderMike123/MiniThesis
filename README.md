@@ -1,1 +1,1 @@
-# MiniThesis
+A Mini website promoting EASY EATS!

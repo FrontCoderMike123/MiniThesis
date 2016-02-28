@@ -2,15 +2,16 @@
 <h1>{{coder.Title}}</h1>
 	<div id="selfHolder">
 		<h3>{{coder.Name}}</h3>
-		<img data-ng-src="{{coder.Photo}}">
+		<img data-ng-src="{{coder.Photo}}" alt="Michel Beaubien - ME"/>
 	</div>
 	<ul>
-		<li>{{coder.Jobs[0]}}</li>
-		<li>{{coder.Jobs[1]}}</li>
-		<li>{{coder.Jobs[2]}}</li>
-		<li>{{coder.Jobs[3]}}</li>
-		<li>{{coder.Jobs[4]}}</li>
-		<li>{{coder.Jobs[5]}}</li>
+		<li><span class="number">1</span>{{coder.Jobs[0]}}</li>
+		<li><span class="number">2</span>{{coder.Jobs[1]}}</li>
+		<li><span class="number">3</span>{{coder.Jobs[2]}}</li>
+		<li><span class="number">4</span>{{coder.Jobs[3]}}</li>
+		<li><span class="number">5</span>{{coder.Jobs[4]}}</li>
+		<li><span class="number">6</span>{{coder.Jobs[5]}}</li>
 	</ul>
-	<img data-ng-src="{{coder.RESPONSIVE}}">
+	<p><span class="firstWord">EASY EATS</span> is a responsive website. From mobile to desktop, no matter where you may be, Easy Eats will always be at your finger tips.</p>
+	<img id="responsiveImg" data-ng-src="{{coder.RESPONSIVE}}" alt="Responsive Design / Develope"/>
 </div>

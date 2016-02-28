@@ -22,11 +22,15 @@
 			</a>
 			<nav>
 			<h2 class="hidden">Easy Eats Navigation</h2>	
-			<ul>
-				<li><a ng-href="#/about">About</a></li>
-				<li><a ng-href="#/tech">Tech</a></li>
-				<li><a ng-href="#/features">Features</a></li>
-				<li><a ng-href="#/developer">Developer</a></li>
+			<ul ng-controller="NavCtrl">
+				<li ng-repeat="item in items" ng-class="{active: isActive(item)}">
+					<a href="#{{item.path}}">{{item.title}}</a>
+				</li>
+		<!--
+		<li ng-class="{active: $location.path() == '/about'}"><a ng-href="#/about">About</a></li>
+		<li ng-class="{active: $location.path() == '/tech'}"><a ng-href="#/tech">Tech</a></li>
+		<li ng-class="{active: $location.path() == '/features'}"><a ng-href="#/features">Features</a></li>
+		<li ng-class="{active: $location.path() == '/developer'}"><a ng-href="#/developer">Developer</a></li>-->
 			</ul>
 			</nav>
 		</header>

@@ -27,6 +27,21 @@ miniSite.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$
 
 //CONTROLLERS
 
+miniSite.controller('NavCtrl', ['$scope', '$location', function($scope, $location) {
+    $scope.items = [
+      {path: '/about', title: 'About'},
+      {path: '/tech', title: 'Tech'},
+      {path: '/features', title: 'Features'},
+      {path: '/developer', title: 'Developer'}
+    ];
+    $scope.isActive = function(item) {
+      if (item.path == $location.path()) {
+        return true;
+      }
+      return false;
+    };
+  }]);
+
 miniSite.controller('aboutCTRL',['$scope','$http',function($scope,$http){
 	
 }]);

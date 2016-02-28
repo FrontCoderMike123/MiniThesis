@@ -3,7 +3,7 @@ h1,h2,h3,h4,h5,h6
 	font-family: 'Lato', sans-serif;
 }
 
-p,a,span
+p,a,span,li
 {
 	font-family: 'Quicksand', sans-serif;
 }
@@ -25,7 +25,7 @@ a
 
 #padding
 {
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 body
@@ -60,6 +60,18 @@ header li
   border-right: thin solid rgba(0,0,0,.0);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+
+header li.active
+{
+  background-color: #ffcc00;
+  border-color: white;
+}
+
+header li.active > a
+{
+  color: #006699;
+  font-weight: bold;
 }
 
 header li:hover
@@ -269,7 +281,7 @@ ul.img-list li:hover span.text-content {
 {
   font-size: 1.2em;
   color: #fff;
-  width: 90%;
+  width: 95%;
   display: block;
   margin: auto;
   padding: 2% 0;
@@ -278,7 +290,7 @@ ul.img-list li:hover span.text-content {
 
 .feat li:nth-child(odd)
 {
-  background-color: white;
+  background-color: rgba(255,255,255,.7);
   color: #006699
 }
 
@@ -343,7 +355,7 @@ ul.shots-list li:hover span.shots-content {
 #selfHolder
 {
   position: relative;
-  width:230px;
+  width:23%;
   overflow: hidden;
   float: left;
 }
@@ -370,23 +382,54 @@ ul.shots-list li:hover span.shots-content {
 #devCon ul
 {
   float: left;
+  width: 75%;
+  margin-left: 2%;
   background: rgba(0,102,153,.9);
-  padding: 1%;
-  margin-left: 10px;
   border-radius: 5px;
+  overflow: hidden;
 }
 
 #devCon li
 {
   color: #ebebeb;
-  font-size: 1.2em;
+  font-size: 1em;
+  width: 44%;
+  float: left;
+  padding: 30px 0 30px 6%;
+  position: relative;
+  overflow: hidden;
   text-align: left;
-  margin-bottom: 10px;
 }
 
-#devCon li:last-child
+#devCon p
 {
-  margin: 0;
+  float: left;
+  width: 100%;
+  font-size: 1.8em;
+  padding: 10px 0;
+  line-height: 40px;
+  color: #006699;
+}
+
+#responsiveImg
+{
+  clear: both;
+  display: block;
+  margin: auto;
+}
+
+.number
+{
+  background-color:rgba(255,255,255,.5);
+  color: #006699;
+  width: 40px;
+  padding: 6% 0;
+  font-size: 2em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Lato', sans-serif;
+  text-align: center!important;
 }
 
 
@@ -510,6 +553,71 @@ ul.shots-list li:hover span.shots-content {
   {
     display: none!important;
   }
+  
+  #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    width: 95%;
+  }
 }
 
 /*Android*/
@@ -631,6 +739,71 @@ ul.shots-list li:hover span.shots-content {
   #screenShots
   {
     display: none!important;
+  }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    width: 95%;
   }
 }
 
@@ -754,6 +927,71 @@ ul.shots-list li:hover span.shots-content {
   {
     display: none!important;
   }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    width: 95%;
+  }
 }
 
 /*Blackberry*/
@@ -875,6 +1113,71 @@ ul.shots-list li:hover span.shots-content {
   #screenShots
   {
     display: none!important;
+  }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    width: 95%;
   }
 }
 
@@ -1000,6 +1303,71 @@ ul.shots-list li:hover span.shots-content {
   {
     display: none!important;
   }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    max-width: 95%;
+  }
 }
 
 /*Kindle*/
@@ -1123,6 +1491,71 @@ ul.shots-list li:hover span.shots-content {
   #screenShots
   {
     display: none!important;
+  }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+   max-width: 95%;
   }
 }
 
@@ -1248,6 +1681,71 @@ ul.shots-list li:hover span.shots-content {
   {
     display: none!important;
   }
+  
+   #devCon
+  {
+    padding: 0;
+    width: 100%;
+  }
+  
+  #devCon h1
+  {
+    margin: 0;
+    padding: 8px 0;
+    border:none;
+  }
+  
+  #selfHolder
+  {
+    width: 100%;
+    float: none;
+  }
+  
+  #selfHolder img
+  {
+    border-radius: 0;
+  }
+  
+  #devCon ul
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+    border-radius: 0;
+  }
+  
+  #devCon li
+  {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  
+  .number
+  {
+   position: unset;
+    position: static;
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #devCon p
+  {
+    padding: 0;
+    font-size: 1em;
+    line-height: normal;
+    float: none;
+  }
+  
+  #responsiveImg
+  {
+   padding: 2.5%;
+    max-width: 95%;
+  }
 }
 
 /*Apple Ipad*/
@@ -1340,6 +1838,22 @@ ul.shots-list li:hover span.shots-content {
   {
     display: none!important;
   }
+  
+  #devCon li
+  {
+  padding: 20px 0 20px 5%;
+  }
+  
+  .number
+  {
+  font-size: 1.4em;
+    width: 25px;
+  }
+  
+  #devCon p
+  {
+    font-size: 1.2em;
+  }
 }
 
 /*Desktop1*/
@@ -1369,6 +1883,22 @@ ul.shots-list li:hover span.shots-content {
     padding-left: 1%;
     margin: 0;
     font-size: 1em;
+  }
+  
+  #devCon li
+  {
+  padding: 20px 0 20px 5%;
+  }
+  
+  .number
+  {
+  font-size: 1.4em;
+    width: 25px;
+  }
+  
+  #devCon p
+  {
+    font-size: 1.2em;
   }
 }
 
