@@ -62,7 +62,7 @@ header li
   border-top-right-radius: 5px;
 }
 
-header li.active
+.active
 {
   background-color: #ffcc00;
   border-color: white;
@@ -157,6 +157,7 @@ footer li
   padding: 1%;
   border-radius: 5px;
   border: thin solid #006699;
+  position: relative;
 }
 
 .containers h1
@@ -184,11 +185,13 @@ footer li
 }
 
 /***************tech PAGE****************/
+
 #techCon
 {
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
 #techCon p

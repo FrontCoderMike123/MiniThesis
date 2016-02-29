@@ -27,20 +27,23 @@ miniSite.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$
 
 //CONTROLLERS
 
-miniSite.controller('NavCtrl', ['$scope', '$location', function($scope, $location) {
-    $scope.items = [
-      {path: '/about', title: 'About'},
-      {path: '/tech', title: 'Tech'},
-      {path: '/features', title: 'Features'},
-      {path: '/developer', title: 'Developer'}
-    ];
-    $scope.isActive = function(item) {
-      if (item.path == $location.path()) {
-        return true;
-      }
-      return false;
-    };
-  }]);
+//You will see here that i TRIEEDDD!!!!! to make an active nav... things were messing up...
+//either the sections and divs would float above eachother .... or the nav would turn on and off....
+//too see for yourself... just add in the UL in index.html. ng-controller="NavCtrl"... see for yourslef
+
+miniSite.controller('NavCtrl',['$scope','$http','$location',function($scope,$http,$location){
+	$scope.getClass = function(path) {
+    var cur_path = $location.path().substr(0, path.length);
+    if (cur_path == path) {
+        if($location.path().substr(0).length > 1 && path.length == 1 )
+            return "";
+        else
+            return "active";
+    } else {
+        return "";
+    }
+}
+}]);
 
 miniSite.controller('aboutCTRL',['$scope','$http',function($scope,$http){
 	

@@ -8,29 +8,28 @@
 <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<script src="js/TweenMax.min.js"></script>
 </head>
 
 <body data-ng-app="miniSite">
+	<h2 class="hidden">Welcome to Easy Eats</h2>
 
 	<section class="mainContainer">
 
 		<div id="padding"><!--keep footer down-->
 
 		<header>
+			<h2 class="hidden">Header</h2>
 			<a href="#/about">
 				<img src="images/logo.png" alt="EasyEats Logo">
 			</a>
 			<nav>
-			<h2 class="hidden">Easy Eats Navigation</h2>	
-			<ul ng-controller="NavCtrl">
-				<li ng-repeat="item in items" ng-class="{active: isActive(item)}">
-					<a href="#{{item.path}}">{{item.title}}</a>
-				</li>
-		<!--
-		<li ng-class="{active: $location.path() == '/about'}"><a ng-href="#/about">About</a></li>
-		<li ng-class="{active: $location.path() == '/tech'}"><a ng-href="#/tech">Tech</a></li>
-		<li ng-class="{active: $location.path() == '/features'}"><a ng-href="#/features">Features</a></li>
-		<li ng-class="{active: $location.path() == '/developer'}"><a ng-href="#/developer">Developer</a></li>-->
+			<h2 class="hidden">Navigation</h2>
+			<ul><!--ng-controller="NavCtrl"-->
+		<li ng-class="getClass('/about')"><a ng-href="#/about">About</a></li>
+		<li ng-class="getClass('/tech')"><a ng-href="#/tech">Tech</a></li>
+		<li ng-class="getClass('/features')"><a ng-href="#/features">Features</a></li>
+		<li ng-class="getClass('/developer')"><a ng-href="#/developer">Developer</a></li>
 			</ul>
 			</nav>
 		</header>
@@ -41,6 +40,7 @@
 		</div><!--padding-->
 
 		<footer>
+			<h2 class="hidden">Footer</h2>
 			<ul>
 				<a href="https://www.facebook.com/EasyEatzApp/" target="onblank">
 					<li class="social facebook"></li>
