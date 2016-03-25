@@ -1,35 +1,16 @@
-<div class="containers" id="techCon" data-ng-repeat="tech in techs">
-	<h2 class="hidden">Technologies</h2>
-	<h1>{{tech.Title}}</h1>
-	<p>{{tech.Sentence}}</p>
+<div class="containers" id="techCon">
+	<h1>Technologies</h1>
+	<p>It took many tools to build Easy Eats, to view them and know more, <a href="#" id="techStagger">Click Here!</a></p>
 	<ul class="img-list">
-		<li class="tween html">
-			<img data-ng-src="{{tech.HTML}}" alt="HTML5"/>
-			<span class="text-content"><span>{{tech.tech1}}</span></span>
-		</li>
-		<li class="tween css">
-			<img data-ng-src="{{tech.CSS}}" alt="CSS3"/>
-			<span class="text-content"><span>{{tech.tech2}}</span></span>
-		</li>
-		<li class="tween java">
-			<img data-ng-src="{{tech.JS}}" alt="Javascript"/>
-			<span class="text-content"><span>{{tech.tech3}}</span></span>
-		</li>
-		<li class="tween mongo">
-			<img data-ng-src="{{tech.MONGO}}" alt="MongoDB"/>
-			<span class="text-content"><span>{{tech.tech4}}</span></span>
-		</li>
-		<li class="tween express">
-			<img data-ng-src="{{tech.EXP}}" alt="ExpressJs"/>
-			<span class="text-content"><span>{{tech.tech5}}</span></span>
-		</li>
-		<li class="tween angu">
-			<img data-ng-src="{{tech.ANGU}}" alt="AngularJs"/>
-			<span class="text-content"><span>{{tech.tech6}}</span></span>
-		</li>
-		<li class="tween node">
-			<img data-ng-src="{{tech.NODE}}" alt="NodeJs"/>
-			<span class="text-content"><span>{{tech.tech7}}</span></span>
+		<li class="tween" data-ng-repeat="tech in techs">
+			<div class="listHolder hidden">
+				<div>
+					<object data="{{tech.SVG}}">
+						<img data-ng-src="{{tech.PNG}}" alt="{{tech.Title}}"/>
+					</object>
+					<span class="text-content">{{tech.Title}}</span>
+				</div>
+			</div>
 		</li>
 	</ul>
 </div>

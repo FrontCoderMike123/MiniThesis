@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mini Site - Easy Eats</title>
 <link href="css/reset.css" rel="stylesheet" type="text/css">
 <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -14,28 +15,39 @@
 <body data-ng-app="miniSite">
 	<h2 class="hidden">Welcome to Easy Eats</h2>
 
-	<section class="mainContainer">
+	<section class="mainContainer" ng-controller="navCTRL">
 
 		<div id="padding"><!--keep footer down-->
 
 		<header>
 			<h2 class="hidden">Header</h2>
-			<a href="#/about">
-				<img src="images/logo.png" alt="EasyEats Logo">
+			<a ng-href="#/about" class="logo">
+				<div>
+					<object data="images/logo.svg">
+						<img src="images/logo.png" alt="EasyEats Logo">
+					</object>
+				</div>
 			</a>
 			<nav>
 			<h2 class="hidden">Navigation</h2>
-			<ul><!--ng-controller="NavCtrl"-->
-		<li ng-class="getClass('/about')"><a ng-href="#/about">About</a></li>
-		<li ng-class="getClass('/tech')"><a ng-href="#/tech">Tech</a></li>
-		<li ng-class="getClass('/features')"><a ng-href="#/features">Features</a></li>
-		<li ng-class="getClass('/developer')"><a ng-href="#/developer">Developer</a></li>
+			<input class="menu-btn" type="checkbox" id="menu-btn"/>
+			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+			<ul class="menu"><!--ng-controller="NavCtrl"-->
+		<li class="navItems aboutNav"><a ng-href="#/about">About</a></li>
+		<li class="dividers"></li>
+		<li class="navItems techNav"><a ng-href="#/tech">Tech</a></li>
+		<li class="dividers"></li>
+		<li class="navItems featureNav"><a ng-href="#/features">Features</a></li>
+		<li class="dividers"></li>
+		<li class="navItems tourNav"><a ng-href="#/tour">Tour</a></li>
+		<li class="dividers"></li>
+		<li class="navItems devNav"><a ng-href="#/developer">Developer</a></li>
 			</ul>
 			</nav>
 		</header>
 
-		<ui-view>
-		</ui-view>
+		<ui-view class="view">
+    	</ui-view>
 
 		</div><!--padding-->
 
@@ -52,8 +64,8 @@
 					<li class="social instagram"></li>
 				</a>
 			</ul>
-<p>&copy; Copyright 2016, <span class="break"></span>EasyEatz Application. <span class="break"></span>
-<a href="http://michel-beaubien.com/" target="onblank">MB Development.</a> <span class="break"></span>All Rights Reserved.</p>
+<p>&copy; Copyright 2016, EasyEatz Application. <span class="break"></span>
+<a href="http://michel-beaubien.com/" target="onblank">MB Development.</a> All Rights Reserved.</p>
 		</footer>
 	</section>
 

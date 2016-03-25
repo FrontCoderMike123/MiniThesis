@@ -3,6 +3,10 @@ h1,h2,h3,h4,h5,h6
 	font-family: 'Lato', sans-serif;
 }
 
+.sel {
+    color:red
+}
+
 p,a,span,li
 {
 	font-family: 'Quicksand', sans-serif;
@@ -23,6 +27,26 @@ a
   display: none;
 }
 
+.block
+{
+  display: block;
+}
+
+.noHeight
+{
+  display: none;
+}
+
+.height
+{
+  height: 100%;
+}
+
+object
+{
+  pointer-events: none;
+}
+
 #padding
 {
   padding-bottom: 80px;
@@ -35,60 +59,207 @@ body
   overflow-x: hidden;
 }
 
+header object, header img
+{
+  max-width: 100%;
+}
+
 header
 {
-  text-align: center;
   background-color: #006699;
-  padding: .5% 0 0 0;
+  position:relative;
+  width: 98%;
+  overflow: hidden;
+ padding: 1%;
 }
 
-header img
+header ul
 {
-  margin-bottom: .5%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
-header li
+.dividers
 {
-  display: inline-block;
-  padding: 10px 20px;
+  width: .1%;
+  background: white;
+  height: 80px;
+}
+
+header ul li
+{
+  width:19.9%;
+  float: left;
+}
+
+header ul li a
+{
+  display: block;
+  padding: 45px 0 5px 0;
+  text-align: center;
+  font-size: 30px;
+  color: #ffcc00;
+  font-weight: bold;
   -webkit-transition: all .5s ease;
   -moz-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-  border-left: thin solid rgba(0,0,0,.0);
-  border-top: thin solid rgba(0,0,0,.0);
-  border-right: thin solid rgba(0,0,0,.0);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+}
+
+header ul li a:hover
+{
+  font-weight: bold;
+}
+
+header .logo
+{
+  display: block;
+  float: left;
+}
+
+header .menu
+{
+  transition: max-height: .2s ease;
+  max-height: 0;
+  width: 80%;
+  float: left;
+  margin-left: 1%;
+}
+
+header .menu-icon
+{
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 10px 0;
+  position: relative;
+  user-select: none;
+}
+
+header .menu-icon .navicon
+{
+  background-color: #ffcc00;
+  display: block;
+  height: 5px;
+  position: relative;
+  transition: background .2s ease;
+  width: 50px;
+}
+
+header .menu-icon .navicon:before,
+header .menu-icon .navicon:after
+{
+  background-color: #ffcc00;;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease;
+  width: 100%;
+}
+
+header .menu-icon .navicon:before
+{
+  top: 12px;
+}
+
+header .menu-icon .navicon:after
+{
+  top: -12px;
+}
+
+header .menu-icon:hover .navicon:before
+{
+  top: 8px;
+}
+
+header .menu-icon:hover .navicon:after
+{
+  top: -8px;
+}
+
+header .menu-btn {
+  display: none;
+}
+ 
+header .menu-btn:checked ~ .menu {
+  max-height: 100%;
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+ 
+header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+ 
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  background-color: #fff;
+  top: 0;
+}
+
+.aboutNav
+{
+  background-image: url('../images/icons/home.svg');
+}
+
+.aboutNav:hover
+{
+}
+
+.techNav
+{
+  background-image: url('../images/icons/tech.svg');
+}
+
+.techNav:hover
+{
+}
+
+.featureNav
+{
+  background-image: url('../images/icons/features.svg');
+}
+
+.featureNav:hover
+{
+}
+
+.tourNav
+{
+  background-image: url('../images/icons/tour.svg');
+}
+
+.tourNav:hover
+{
+}
+
+.devNav
+{
+  background-image: url('../images/icons/developer.svg');
+}
+
+.devNav:hover
+{
+}
+
+.navItems
+{
+  background-repeat: no-repeat;
+  background-position: top 5px center;
 }
 
 .active
 {
   background-color: #ffcc00;
   border-color: white;
-}
-
-header li.active > a
-{
-  color: #006699;
-  font-weight: bold;
-}
-
-header li:hover
-{
-  background-color: #ffcc00;
-  border-color: white;
-}
-
-header li:hover > a
-{
-  color: #006699;
-}
-
-header a
-{
-  font-size: 1.2em;
-  color: #ebebeb;
 }
 
 footer
@@ -171,11 +342,108 @@ footer li
 }
 
 /***************ABOUT PAGE****************/
-#aboutCon p
+
+#aboutCon
 {
-  color: #333;
-  font-size: 1.2em;
-  line-height: 30px;
+  width: 100%;
+  display: block;
+  clear: both;
+  overflow: hidden;
+  padding: 2% 0 0 0;
+}
+
+#aboutButtonRow
+{
+  width: 100%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#aboutButtonRow button
+{
+  border: none;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin:0 5px;
+  width:420px;
+  height: 420px;
+  background-color: rgba(0,0,0,0);
+  border-radius: 50%;
+   background-position: center;
+  background-size: 300px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 1px solid #006699;
+  box-shadow: inset 0 -5px 5px rgba(0,102,153,.5),inset 0 2px 5px rgba(0,102,153,.5);
+}
+
+.infoText
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height:420px;
+  background-color: rgba(255,255,255,.8);
+  padding: 20% 5% 0 5%;
+}
+
+.infoText h3
+{
+  color: #006699;
+  font-size: 2.5em;
+}
+
+.infoText p
+{
+  font-size: 1.6em;
+}
+
+.infoHover
+{
+   position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height:420px;
+  background-color: rgba(0,102,153,.8);
+  padding: 40% 5% 0 5%;
+  font-weight: bold;
+  color: #ffcc00;
+  font-size: 3em;
+  opacity: 0;
+  -webkit-opacity:0;
+  -moz-opacity:0;
+  -o-opacity:0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s easel
+}
+
+#aboutButtonRow button:hover > .infoHover
+{
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+}
+
+#what
+{
+  background-image: url('../images/home/money.svg');
+}
+
+#how
+{
+  background-image: url('../images/home/refresh.svg');
+}
+
+#where
+{
+  background-image: url('../images/home/happy.svg');
 }
 
 .firstWord
@@ -184,7 +452,7 @@ footer li
   font-weight: bold;
 }
 
-/***************tech PAGE****************/
+/***************TECH PAGE****************/
 
 #techCon
 {
@@ -192,15 +460,40 @@ footer li
   position: relative;
   overflow: hidden;
   height: 100%;
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  border:none;
 }
 
 #techCon p
 {
   color: #333;
-  font-size: 1.2em;
-  line-height: 30px;
+  font-size: 1.4em;
   display: block;
-  margin-bottom: 10px;
+  margin: 20px 0;
+}
+
+#techCon a
+{
+  font-weight: bold;
+  color: #006699;
+}
+
+.listHolder
+{
+  text-align: center;
+  overflow: hidden;
+}
+
+.listHolder div
+{
+  display: inline-block;
+}
+
+.listHolder object,.listHolder img
+{
+  max-width: 100%;
 }
 
 ul.img-list {
@@ -210,9 +503,19 @@ ul.img-list {
 ul.img-list li {
   display: inline-block;
   position: relative;
-  margin: 0 20px;
-  width: 10%;
+  margin: 0 30px;
+  width: 15%;
   cursor: pointer;
+  background-color: rgba(255,255,255,.5);
+  border-radius: 50px;
+  padding: 15px 0;
+  overflow: hidden;
+  border: 5px solid rgba(255,255,255,0);
+}
+
+ul.img-list li:last-child
+{
+  margin-top: 15px;
 }
 
 span.text-content {
@@ -220,11 +523,13 @@ span.text-content {
   background: rgba(255,204,0,.8);
   letter-spacing: 1px;
   font-weight: bold;
-  padding: 20% 0;
+  padding: 40% 0 0 0;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
+  height: 300px;
+  font-size:1.8em;
   opacity: 0;
   -moz-opacity:0;
   -webkit-opacity:0;
@@ -238,6 +543,11 @@ ul.img-list li:hover span.text-content {
   opacity: 1;
     -moz-opacity:1;
     -webkit-opacity:1;
+}
+
+ul.img-list li:hover
+{
+  border-color: white;
 }
 
 
@@ -494,12 +804,6 @@ ul.shots-list li:hover span.shots-content {
     border-radius: 0;
     border: none;
   }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1em;
-  }
   
   #techCon p
   {
@@ -681,13 +985,6 @@ ul.shots-list li:hover span.shots-content {
     border-radius: 0;
     border: none;
   }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.05em;
-  }
-  
   #techCon p
   {
     font-size: 1.05em;
@@ -869,12 +1166,6 @@ ul.shots-list li:hover span.shots-content {
     border: none;
   }
 
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.05em;
-  }
-  
   #techCon p
   {
     font-size: 1.05em;
@@ -1054,12 +1345,6 @@ ul.shots-list li:hover span.shots-content {
     width: 98%;
     border-radius: 0;
     border: none;
-  }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1em;
   }
   
   #techCon p
@@ -1244,12 +1529,6 @@ ul.shots-list li:hover span.shots-content {
     border-radius: 0;
     border: none;
   }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.1em;
-  }
   
   #techCon p
   {
@@ -1432,12 +1711,6 @@ ul.shots-list li:hover span.shots-content {
     width: 98%;
     border-radius: 0;
     border: none;
-  }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.1em;
   }
   
   #techCon p
@@ -1622,12 +1895,6 @@ ul.shots-list li:hover span.shots-content {
     border-radius: 0;
     border: none;
   }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.15em;
-  }
   
   #techCon p
   {
@@ -1798,12 +2065,6 @@ ul.shots-list li:hover span.shots-content {
     width: 98%;
     border-radius: 0;
     border: none;
-  }
-
-  #aboutCon p
-  {
-    text-align: center;
-    font-size: 1.15em;
   }
   
   #techCon p

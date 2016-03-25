@@ -1,21 +1,45 @@
 {
-	"Tech":
+	"Techs":
 	[{
-		"Title":"Tech",
-		"Sentence":"When it comes to building EasyEats, a lot of research goes into it. But there are some major tools involved in this creation. Below are the languages & programs that I used to develope this app.",
-		"HTML":"images/tools/html5.png",
-		"CSS":"images/tools/css3.png",
-		"JS":"images/tools/js3.png",
-		"MONGO":"images/tools/mongo.png",
-		"EXP":"images/tools/express.png",
-		"ANGU":"images/tools/angular.png",
-		"NODE":"images/tools/node.png",
-		"tech1":"HTML5",
-		"tech2":"CSS3",
-		"tech3":"JAVASCRIPT",
-		"tech4":"MONGODB",
-		"tech5":"EXPRESSJS",
-		"tech6":"ANGULARJS",
-		"tech7":"NODEJS"
+		"Title":"HTML 5",
+		"SVG":"images/used/html5.svg",
+		"PNG":"images/used/html5.png",
+		"Desc":"HTML5 is used for the 'Structure' of the house. This is used the build the outside of the app, the frame."
+	},
+	{
+		"Title":"CSS 3",
+		"SVG":"images/used/style.svg",
+		"PNG":"images/used/style.png",
+		"Desc":"CSS3 is used to 'Design' the house. The inside and outs of Easy Eats. The colors, style, template etc."
+	},
+	{
+		"Title":"Javascript",
+		"SVG":"images/used/JS.svg",
+		"PNG":"images/used/JS.png",
+		"Desc":"Javascript is used for the 'Plumbing' of the house. Flic a light switch, on comes the power. You register a user, users created."
+	},
+	{
+		"Title":"MongoDB",
+		"SVG":"images/used/mongo.svg",
+		"PNG":"images/used/mongo.png",
+		"Desc":"MongoDB is where the users information is stored. This allows the application to apply a login / register form and hold information."
+	},
+	{
+		"Title":"ExpressJS",
+		"SVG":"images/used/express.svg",
+		"PNG":"images/used/express.png",
+		"Desc":"ExpressJS is used to carry 'Variables' over easily from function to function. This allows for personal 'Shout Outs' to the user."
+	},
+	{
+		"Title":"AngularJS",
+		"SVG":"images/used/angular.svg",
+		"PNG":"images/used/angular.png",
+		"Desc":"AngularJS is used to 'Loop' through content with ease. Read JSON files and extract the needed information."
+	},
+	{
+		"Title":"NodeJS",
+		"SVG":"images/used/node.svg",
+		"PNG":"images/used/node.png",
+		"Desc":"NodeJS is the 'Back-Bone' of the opperation. Everything is compiled in NodeJs, routes, views, partials etc."
 	}]
 }

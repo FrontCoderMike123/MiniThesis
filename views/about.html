@@ -1,6 +1,27 @@
-<div class="containers" id="aboutCon">
-	<h1>About</h1>
-	<p><span class="firstWord">Easy Eats</span> is a food finding app, where I take your entered budget along with your location &amp; I give you results of restaurants in your area. Those restaurants will match your budget and ONLY show you food in which you can afford.</p>
-	<p><span class="firstWord">Example:</span> If you've entered $10.00, Easy Eats will only show you results where you CAN afford to eat. It's quick, &amp; it's personal. Easy Eats has a 'Cravings' option where you can choose to filter your searches with finer results. You're hungry for a sub, Easy Eats will show you where to get a delicious sub.</p>
-	<p><span class="firstWord">Easy Eats</span> is a responsive website. From mobile to desktop, no matter where you may be, Easy Eats will always be at your finger tips.</p>
+<div id="aboutCon">
+	<div id="aboutButtonRow">
+		<button id="what" ng-click="slideToggle = 1">
+			<div class="infoText" ng-show="slideToggle == 1">
+			<h3>What Is Easy Eats?</h3>
+			<p><span class="firstWord">Easy Eats</span> is a food finding app, where I take your entered budget along with your location &amp; I give you results of restaurants in your area. Those restaurants will match your budget and ONLY show you food in which you can afford.</p>
+			</div>
+			<span class="infoHover">What Is Easy Eats?</span>
+		</button>
+
+		<button id="how" ng-click="slideToggle = 2">
+			<div class="infoText" ng-show="slideToggle == 2">
+			<h3>How It Works?</h3>
+			<p><span class="firstWord">Example:</span> If you've entered $10.00, Easy Eats will only show you results where you CAN afford to eat. It's quick, &amp; it's personal. Easy Eats has a 'Cravings' option where you can choose to filter your searches with finer results.</p>
+			</div>
+			<span class="infoHover">How It Works?</span>
+		</button>
+
+		<button id="where" ng-click="slideToggle = 3">
+			<div class="infoText" ng-show="slideToggle == 3">
+			<h3>Where To Find It?</h3>
+			<p><span class="firstWord">Easy Eats</span> is a responsive website. From mobile to desktop, no matter where you may be, Easy Eats will always be at your finger tips. Always there to keep the user happy.</p>
+			</div>
+			<span class="infoHover">Where To Find It?</span>
+		</button>
+	</div>
 </div>
