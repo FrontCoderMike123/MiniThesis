@@ -1,14 +1,18 @@
 <div class="containers" id="techCon">
 	<h1>Technologies</h1>
-	<p>It took many tools to build Easy Eats, to view them and know more, <a href="#" id="techStagger">Click Here!</a></p>
+	<p>It took many tools to build Easy Eats, to view them and know more, <a href="#" ng-click="stagger()">Click Here!</a></p>
 	<ul class="img-list">
 		<li class="tween" data-ng-repeat="tech in techs">
 			<div class="listHolder hidden">
 				<div>
-					<object data="{{tech.SVG}}">
-						<img data-ng-src="{{tech.PNG}}" alt="{{tech.Title}}"/>
-					</object>
-					<span class="text-content">{{tech.Title}}</span>
+	<a ng-href="{{tech.LightSVG}}" data-lightbox="techs" data-title="{{tech.Desc}}">
+		<div>
+			<object data="{{tech.SVG}}">
+				<img src="{{tech.PNG}}" alt="{{tech.Title}}"/>
+			</object>
+			<span class="text-content">{{tech.Title}}</span>
+		</div>
+	</a>
 				</div>
 			</div>
 		</li>

@@ -3,10 +3,6 @@ h1,h2,h3,h4,h5,h6
 	font-family: 'Lato', sans-serif;
 }
 
-.sel {
-    color:red
-}
-
 p,a,span,li
 {
 	font-family: 'Quicksand', sans-serif;
@@ -22,6 +18,11 @@ a
   text-decoration: none;
 }
 
+.yellow
+{
+  color: #ffcc00;
+}
+
 .hidden
 {
   display: none;
@@ -29,7 +30,7 @@ a
 
 .block
 {
-  display: block;
+  display: block!important;
 }
 
 .noHeight
@@ -49,7 +50,7 @@ object
 
 #padding
 {
-  padding-bottom: 80px;
+  padding-bottom: 58px;
 }
 
 body
@@ -57,6 +58,9 @@ body
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 1400px!important;
+  margin: auto;
+  display: block;
 }
 
 header object, header img
@@ -388,6 +392,7 @@ footer li
   height:420px;
   background-color: rgba(255,255,255,.8);
   padding: 20% 5% 0 5%;
+  border-radius: 50%;
 }
 
 .infoText h3
@@ -399,36 +404,6 @@ footer li
 .infoText p
 {
   font-size: 1.6em;
-}
-
-.infoHover
-{
-   position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-  height:420px;
-  background-color: rgba(0,102,153,.8);
-  padding: 40% 5% 0 5%;
-  font-weight: bold;
-  color: #ffcc00;
-  font-size: 3em;
-  opacity: 0;
-  -webkit-opacity:0;
-  -moz-opacity:0;
-  -o-opacity:0;
-  transition: all .5s ease;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -o-transition: all .5s easel
-}
-
-#aboutButtonRow button:hover > .infoHover
-{
-  opacity: 1;
-  -webkit-opacity: 1;
-  -moz-opacity: 1;
-  -o-opacity: 1;
 }
 
 #what
@@ -461,7 +436,7 @@ footer li
   overflow: hidden;
   height: 100%;
   margin: 0;
-  width: 100%;
+  width: 98%;
   border-radius: 0;
   border:none;
 }
@@ -494,6 +469,11 @@ footer li
 .listHolder object,.listHolder img
 {
   max-width: 100%;
+  background-color: rgba(255,255,255,.5);
+  padding: 20px;
+  border-radius: 50px;
+  overflow: hidden;
+  border: 5px solid rgba(255,255,255,.3);
 }
 
 ul.img-list {
@@ -503,14 +483,11 @@ ul.img-list {
 ul.img-list li {
   display: inline-block;
   position: relative;
-  margin: 0 30px;
+  margin: 0 35px;
   width: 15%;
   cursor: pointer;
-  background-color: rgba(255,255,255,.5);
-  border-radius: 50px;
-  padding: 15px 0;
   overflow: hidden;
-  border: 5px solid rgba(255,255,255,0);
+  overflow: hidden;
 }
 
 ul.img-list li:last-child
@@ -523,12 +500,13 @@ span.text-content {
   background: rgba(255,204,0,.8);
   letter-spacing: 1px;
   font-weight: bold;
-  padding: 40% 0 0 0;
+  padding: 43% 0 0 0;
   left: 0;
   position: absolute;
   top: 0;
   width: 100%;
-  height: 300px;
+  border-radius: 50px;
+  height: 100%;
   font-size:1.8em;
   opacity: 0;
   -moz-opacity:0;
@@ -545,11 +523,6 @@ ul.img-list li:hover span.text-content {
     -webkit-opacity:1;
 }
 
-ul.img-list li:hover
-{
-  border-color: white;
-}
-
 
 /***************feat PAGE****************/
 
@@ -559,52 +532,48 @@ ul.img-list li:hover
   overflow: hidden;
 }
 
-#featCon div:nth-child(2)
-{
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
-#featCon div:nth-child(4)
-{
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
 #featCon div
 {
-  display: block;
-  float: left;
-  width: 33.33333333333333333%;
-  padding: 1% 0;
-  background-color: #006699;
+  display: inline-block;
+  width: 32%;
+  margin:  0 .5%
 }
 
-.feat h3
+.feat h2
 {
-  color: #ffcc00;
+  color: #006699;
   font-size: 1.5em;
   width: 80%;
   display: block;
   margin: auto;
+  margin-top: 10px;
   padding-bottom: 5px;
 }
 
 .feat li
 {
-  font-size: 1.2em;
-  color: #fff;
+  font-size: 1.1em;
+  color: #006699;
   width: 95%;
   display: block;
+  font-weight: bold;
   margin: auto;
-  padding: 2% 0;
-  border-radius: 5px;
+  padding: 4% 0;
+  background-color: white;
+  border-bottom: thin solid #006699;
 }
 
-.feat li:nth-child(odd)
+.feat li:first-child
 {
-  background-color: rgba(255,255,255,.7);
-  color: #006699
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.feat li:last-child
+{
+  border: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #screenShots
@@ -658,70 +627,277 @@ ul.shots-list li:hover span.shots-content {
     -webkit-opacity:1;
 }
 
+/******************TOUR PAGE**********************/
+#tourCon
+{
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+  padding: 1% 0;
+}
+
+#tourCon ul
+{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  padding: 1% 0;
+}
+
+#tourCon li
+{
+  width: 198px;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 30px;
+  position: relative;
+}
+
+#tourCon li:first-child
+{
+  margin-bottom: 1%;
+}
+
+.tourContent
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50%;
+  opacity:0;
+  -webkit-opacity:0;
+  -moz-opacity:0;
+  -o-opacity:0;
+  transition: all .5s ease;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+}
+
+#tourCon li:hover .tourContent
+{
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+}
+
 /***************dev PAGE****************/
 #devCon
 {
   text-align: center;
   overflow: hidden;
+  width: 70%;
+  background-color: #ffcc00;
+  padding: 1% 0 0 0;
+  margin: 20px auto;
+  border: thin solid #006699;
+  border-radius: 5px;
+}
+
+#devCon h1
+{
+  color: #006699;
+  font-size: 2em;
+  display: block;
+  border-bottom: thin solid white;
+  padding-bottom: 5px;
 }
 
 #selfHolder
 {
-  position: relative;
-  width:23%;
+  display: block;
+  width: 100%;
   overflow: hidden;
-  float: left;
+  padding: 15% 0;
+  position: relative;
 }
 
-#selfHolder h3
+.noPadding
+{
+  padding: 4% 0!important;
+}
+
+#myDiv
+{
+  position: relative;
+  position: absolute;
+  top: 8%;;
+  left: 37.5%;
+  z-index: 100;
+  width: 25%;
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 5px -5px rgba(51,51,51,.5);
+  cursor: pointer;
+}
+
+#myDiv img
+{
+  border-radius: 50%;
+}
+
+#myDiv h3
 {
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: 1;
   width: 100%;
-  padding:3% 0;
-  background: rgba(255,201,0,.5);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  padding: 3% 0 12% 0;
+  background-color: #ffcc00;
+  color: #006699;
+  font-size: 1.2em;
+}
+
+#myInfo
+{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+#myInfo div
+{
+  width: 40%;
+  overflow: hidden;
+}
+
+#myInfo div span
+{
+  display: block;
+  background: #006699;
+  width: 70%;
+  margin: auto;
+  padding: 3% 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.7em;
+}
+
+#myInfo div p, #myInfo div a
+{
+  font-size: 1.2em;
+  padding: 20px 0;
+  display: block;
+  font-weight: bold;
   color: #006699;
 }
 
-#selfHolder img
+#myInfo div a:hover
 {
-  border-radius: 5px;
+  color: #fff;
+}
+
+.left
+{
+  float: left;
+}
+
+.right
+{
+  float: right;
+}
+
+#jobPlans
+{
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  border-top: 5px solid #006699;
+}
+
+#jobPlans li
+{
+  min-height: 350px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#jobPlans li:nth-child(even) > .NUM
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #006699;
+  height: 250px;
+  font-size: 100px;
+  padding: 100px 20px 0px 20px;
+  color: #fff;
+}
+
+#jobPlans li:nth-child(odd)  > .NUM
+{
+ position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #006699;
+  height: 200px;
+  font-size: 100px;
+  padding: 100px 20px 0px 20px;
+  color: #fff;
+}
+
+#jobPlans object, #jobPlans img
+{
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+#jobPlans p
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  background-color: #006699;
+  color: white!important;
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0;
+}
+
+#finalDiv
+{
+  min-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+#finalDiv p
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 96%;
+  padding: 1% 2%;
+  background-color: #006699;
+  color: #fff;
+  font-size: 1.4em;
+  font-weight: bold;
+  line-height: 35px;
+}
+
+#foldOut
+{
+  display: none;
 }
 
 #devCon ul
 {
-  float: left;
-  width: 75%;
-  margin-left: 2%;
-  background: rgba(0,102,153,.9);
-  border-radius: 5px;
   overflow: hidden;
-}
-
-#devCon li
-{
-  color: #ebebeb;
-  font-size: 1em;
-  width: 44%;
-  float: left;
-  padding: 30px 0 30px 6%;
-  position: relative;
-  overflow: hidden;
-  text-align: left;
-}
-
-#devCon p
-{
-  float: left;
-  width: 100%;
-  font-size: 1.8em;
-  padding: 10px 0;
-  line-height: 40px;
-  color: #006699;
 }
 
 #responsiveImg
@@ -744,6 +920,210 @@ ul.shots-list li:hover span.shots-content {
   font-family: 'Lato', sans-serif;
   text-align: center!important;
 }
+
+/*TECH LIGHT BOX*/
+/***************************EVERYTHING FOR LIGHTBOX**********************************/
+/* Preload images */
+body:after {
+  content: url(../images/lightBox/exit.svg) url(../images/lightBox/loading.svg) url(../immages/lightBox/prev.svg) url(../images/lightBox/next.svg);
+  display: none;
+}
+
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: #006699;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  display: none;
+}
+
+#lightbox,.lightbox
+{
+  top: 30px!important;
+}
+
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+}
+
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.lightbox a img {
+  border: none;
+}
+
+.lb-outerContainer {
+  position: relative;
+  background-color: #fff;
+  *zoom: 1;
+  padding: 20px 150px 80px 150px;
+  margin: 0 auto;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-container {
+  padding: 4px;
+}
+
+.lb-loader {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.lb-cancel {
+  display: block;
+  width:220px;
+  height: 145px;
+  margin: 0 auto;
+  background: url(../images/lightBox/loading.svg) no-repeat;
+}
+
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container > .nav {
+  left: 0;
+}
+
+.lb-prev, .lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 20%;
+  left:0;
+  float: left;
+  background: url(../images/lightBox/prev.svg) left 60% top 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-nav a.lb-next {
+  width: 20%;
+  right: 0;
+  float: right;
+  background: url(../images/lightBox/next.svg) right 60% top 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+.lb-dataContainer {
+  position: absolute;
+  bottom: 3%;
+  left: 25%;
+  background:rgba(255,255,255,.8);
+  padding: 10px 0 0 0;
+  width: 50%!important;
+  *zoom: 1;
+}
+
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.lb-data {
+  padding: 0 4px;
+  color: #006699;
+    text-shadow: 0 0 5px rgba(51,51,51,.2);
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.lb-data .lb-details {
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.lb-data .lb-caption {
+  font-size: 1.6em;
+  line-height: 1em;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+}
+
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  font-size: 1.2em;
+  color: #006699;
+}
+
+.lb-data .lb-close {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background: url(../images/lightBox/exit.svg) top right no-repeat;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}/*lightBox*/
 
 
 /*My Phone*/

@@ -1,52 +1,12 @@
 <div class="containers" id="featCon">
 	<h1>Features</h1>
-	<div class="feat">
-		<h3>Budget</h3>
-		<ul>
-			<li>Enter Money</li>
-			<li>Wait for Results</li>
-			<li>Eat Where You CAN Eat</li>
-		</ul>
-	</div>
-	<div class="feat">
-		<h3>Geolocation</h3>
-		<ul>
-			<li>Find Your Position</li>
-			<li>Use Position to Find Restaurants</li>
-			<li>Decide Where You WANT to Go</li>
-		</ul>
-	</div>
-	<div class="feat">
-		<h3>Cravings</h3>
-		<ul>
-			<li>Craving Something Different?</li>
-			<li>EasyEats Will Fine Tune Results</li>
-			<li>Enjoy the Food YOU want</li>
-		</ul>
-	</div>
-
-	<div id="screenShots" data-ng-repeat="feature in features">
-		<ul class="shots-list">
-			<li>
-				<img data-ng-src="{{feature.img1}}" alt="NewOrNot?"/>
-				<span class="shots-content"><span>{{feature.shot1}}</span></span>
-			</li>
-			<li>
-				<img data-ng-src="{{feature.img2}}" alt="SignUp"/>
-				<span class="shots-content"><span>{{feature.shot2}}</span></span>
-			</li>
-			<li>
-				<img data-ng-src="{{feature.img3}}" alt="Login"/>
-				<span class="shots-content"><span>{{feature.shot3}}</span></span>
-			</li>
-			<li>
-				<img data-ng-src="{{feature.img4}}" alt="Budget"/>
-				<span class="shots-content"><span>{{feature.shot4}}</span></span>
-			</li>
-			<li>
-				<img data-ng-src="{{feature.img5}}" alt="Restaurants"/>
-				<span class="shots-content"><span>{{feature.shot5}}</span></span>
-			</li>
-		</ul>
-	</div>
+		<div class="feat" data-ng-repeat="feature in features">
+			<object data="{{feature.SVG}}">
+				<img data-ng-src="{{feature.PNG}}" alt="{{feature.Title}}"/>
+			</object>
+			<h2>{{feature.Title}}</h2>
+			<ul>
+				<li class="feats" data-ng-repeat="list in feature.List">{{list}}</li>
+			</ul>
+		</div>
 </div>

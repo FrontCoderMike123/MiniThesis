@@ -4,42 +4,49 @@
 		"Title":"HTML 5",
 		"SVG":"images/used/html5.svg",
 		"PNG":"images/used/html5.png",
+		"LightSVG":"images/lightBox/html5.svg",
 		"Desc":"HTML5 is used for the 'Structure' of the house. This is used the build the outside of the app, the frame."
 	},
 	{
 		"Title":"CSS 3",
 		"SVG":"images/used/style.svg",
 		"PNG":"images/used/style.png",
+		"LightSVG":"images/lightBox/style.svg",
 		"Desc":"CSS3 is used to 'Design' the house. The inside and outs of Easy Eats. The colors, style, template etc."
 	},
 	{
 		"Title":"Javascript",
 		"SVG":"images/used/JS.svg",
 		"PNG":"images/used/JS.png",
+		"LightSVG":"images/lightBox/JS.svg",
 		"Desc":"Javascript is used for the 'Plumbing' of the house. Flic a light switch, on comes the power. You register a user, users created."
 	},
 	{
 		"Title":"MongoDB",
 		"SVG":"images/used/mongo.svg",
 		"PNG":"images/used/mongo.png",
+		"LightSVG":"images/lightBox/mongo.svg",
 		"Desc":"MongoDB is where the users information is stored. This allows the application to apply a login / register form and hold information."
 	},
 	{
 		"Title":"ExpressJS",
 		"SVG":"images/used/express.svg",
 		"PNG":"images/used/express.png",
+		"LightSVG":"images/lightBox/express.svg",
 		"Desc":"ExpressJS is used to carry 'Variables' over easily from function to function. This allows for personal 'Shout Outs' to the user."
 	},
 	{
 		"Title":"AngularJS",
 		"SVG":"images/used/angular.svg",
 		"PNG":"images/used/angular.png",
+		"LightSVG":"images/lightBox/angular.svg",
 		"Desc":"AngularJS is used to 'Loop' through content with ease. Read JSON files and extract the needed information."
 	},
 	{
 		"Title":"NodeJS",
 		"SVG":"images/used/node.svg",
 		"PNG":"images/used/node.png",
+		"LightSVG":"images/lightBox/node.svg",
 		"Desc":"NodeJS is the 'Back-Bone' of the opperation. Everything is compiled in NodeJs, routes, views, partials etc."
 	}]
 }

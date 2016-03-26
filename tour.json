@@ -1,0 +1,93 @@
+{
+	"Tour":
+	[{
+		"Title":"Welcome",
+		"smSVG":"images/tour/1.svg",
+		"smPNG":"images/tour/1.png",
+		"LG":"images/tour/1LG.png",
+		"Desc":"New or Not?",
+		"svgHover":"images/tour/hovers/1.svg",
+		"pngHover":"images/tour/hovers/1.png"
+	},
+	{
+		"Title":"Sign Up",
+		"smSVG":"images/tour/2.svg",
+		"smPNG":"images/tour/2.png",
+		"LG":"images/tour/2LG.png",
+		"Desc":"Registration Form",
+		"svgHover":"images/tour/hovers/2.svg",
+		"pngHover":"images/tour/hovers/2.png"
+	},
+	{
+		"Title":"Login",
+		"smSVG":"images/tour/3.svg",
+		"smPNG":"images/tour/3.png",
+		"LG":"images/tour/3LG.png",
+		"Desc":"Login Page",
+		"svgHover":"images/tour/hovers/3.svg",
+		"pngHover":"images/tour/hovers/3.png"
+	},
+	{
+		"Title":"Budget",
+		"smSVG":"images/tour/4.svg",
+		"smPNG":"images/tour/4.png",
+		"LG":"images/tour/4LG.png",
+		"Desc":"Budget Page",
+		"svgHover":"images/tour/hovers/4.svg",
+		"pngHover":"images/tour/hovers/4.png"
+	},
+	{
+		"Title":"Restaurants",
+		"smSVG":"images/tour/5.svg",
+		"smPNG":"images/tour/5.png",
+		"LG":"images/tour/5LG.png",
+		"Desc":"Restaurant Indicator",
+		"svgHover":"images/tour/hovers/5.svg",
+		"pngHover":"images/tour/hovers/5.png"
+	},
+	{
+		"Title":"Settings",
+		"smSVG":"images/tour/6.svg",
+		"smPNG":"images/tour/6.png",
+		"LG":"images/tour/6LG.png",
+		"Desc":"Account Settings",
+		"svgHover":"images/tour/hovers/6.svg",
+		"pngHover":"images/tour/hovers/6.png"
+	},
+	{
+		"Title":"Update",
+		"smSVG":"images/tour/7.svg",
+		"smPNG":"images/tour/7.png",
+		"LG":"images/tour/7LG.png",
+		"Desc":"Update User",
+		"svgHover":"images/tour/hovers/7.svg",
+		"pngHover":"images/tour/hovers/7.png"
+	},
+	{
+		"Title":"Reset",
+		"smSVG":"images/tour/8.svg",
+		"smPNG":"images/tour/8.png",
+		"LG":"images/tour/8LG.png",
+		"Desc":"Reset Password",
+		"svgHover":"images/tour/hovers/8.svg",
+		"pngHover":"images/tour/hovers/8.png"
+	},
+	{
+		"Title":"Favorites",
+		"smSVG":"images/tour/9.svg",
+		"smPNG":"images/tour/9.png",
+		"LG":"images/tour/9LG.png",
+		"Desc":"User Favorites",
+		"svgHover":"images/tour/hovers/9.svg",
+		"pngHover":"images/tour/hovers/9.png"
+	},
+	{
+		"Title":"Delete",
+		"smSVG":"images/tour/10.svg",
+		"smPNG":"images/tour/10.png",
+		"LG":"images/tour/10LG.png",
+		"Desc":"Delete User",
+		"svgHover":"images/tour/hovers/10.svg",
+		"pngHover":"images/tour/hovers/10.png"
+	}]
+}

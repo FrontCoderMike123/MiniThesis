@@ -52,31 +52,49 @@ miniSite.controller('techCTRL',['$scope','$http',function($scope,$http){
 	$http.get('tech.json').success(function(data) {
 		$scope.techs = data.Techs;
 	});
-	var button = document.querySelector('#techStagger');
-	function toolList() {
+
+	$scope.stagger = function(){
 		var holder = document.querySelectorAll('.listHolder');
 		for(var i=0; i<holder.length; i++){
 			holder[i].classList.add('block');
 		}
 	TweenMax.staggerFrom(".tween",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
 	};
-    button.addEventListener('click',toolList,false);
+
 }]);
 
 miniSite.controller('featuresCTRL',['$scope','$http',function($scope,$http){
 	$http.get('features.json').success(function(data) {
 		$scope.features = data.Features;
 	});
+
+	$scope.showFeats = function(){
+		TweenMax.staggerFrom(".feats",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
+
 }]);
 
 miniSite.controller('tourCTRL',['$scope','$http',function($scope,$http){
-
+	$http.get('tour.json').success(function(tour){
+		$scope.Imgs = tour.Tour;
+	});
 }]);
 
 miniSite.controller('developerCTRL',['$scope','$http',function($scope,$http){
 	$http.get('developer.json').success(function(data) {
 		$scope.coders = data.Developer;
 	});
+
+	$scope.myList = function(){
+		var divs = document.querySelector('#myInfo');
+		var holder = document.querySelector('#selfHolder');
+		var theList = document.querySelector('#foldOut');
+		divs.classList.add('block');
+		holder.classList.add('noPadding');
+		theList.classList.add('block');
+		TweenMax.staggerFrom(".myInfos",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+		TweenMax.staggerFrom(".myLists",2,{opacity:0,delay:0.5}, 0.1);
+	};
 }]);
 
 //CONTROLLERS END

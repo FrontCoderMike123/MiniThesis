@@ -4,15 +4,61 @@
 		"Title":"Developer",
 		"Name":"Michel Beaubien",
 		"Photo":"images/me.jpg",
-		"RESPONSIVE":"images/tools/responsive.png",
+		"City":"London, Ontario",
+		"Education":"IDP & IMS Diploma",
+		"Email":"michelBeaubien@hotmail.com",
+		"Website":"www.michel-beaubien.com",
+		"Url":"http://michel-beaubien.com/",
+		"responsiveSVG":"images/dev/responsive.svg",
+		"responsivePNG":"images/dev/responsive.png",
 		"Jobs":
-		[
-			"Plan",
-			"Research",
-			"Front End Code",
-			"Back End Code",
-			"Google Maps / Places API",
-			"Create Registration & Login"
-		]
+		[{
+			"Num":"1",
+			"Plan":"Plan & Design",
+			"SVG":"images/dev/plan.svg",
+			"PNG":"images/dev/plan.png"
+		},
+		{
+			"Num":"2",
+			"Plan":"Research & More Research",
+			"SVG":"images/dev/research.svg",
+			"PNG":"images/dev/research.png"
+		},
+		{
+			"Num":"3",
+			"Plan":"Front End Code",
+			"SVG":"images/dev/frontEnd.svg",
+			"PNG":"images/dev/frontEnd.png"
+		},
+		{
+			"Num":"4",
+			"Plan":"Back End Code",
+			"SVG":"images/dev/backEnd.svg",
+			"PNG":"images/dev/backEnd.png"
+		},
+		{
+			"Num":"5",
+			"Plan":"Google Maps",
+			"SVG":"images/dev/maps.svg",
+			"PNG":"images/dev/maps.png"
+		},
+		{
+			"Num":"6",
+			"Plan":"Create Resgistration & Login",
+			"SVG":"images/dev/login.svg",
+			"PNG":"images/dev/login.png"
+		},
+		{
+			"Num":"7",
+			"Plan":"Test & Promote App",
+			"SVG":"images/dev/promote.svg",
+			"PNG":"images/dev/promote.png"
+		},
+		{
+			"Num":"8",
+			"Plan":"Have The Perfect App",
+			"SVG":"images/dev/perfect.svg",
+			"PNG":"images/dev/perfect.png"
+		}]
 	}]
 }

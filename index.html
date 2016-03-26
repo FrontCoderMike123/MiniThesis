@@ -32,12 +32,12 @@
 			<h2 class="hidden">Navigation</h2>
 			<input class="menu-btn" type="checkbox" id="menu-btn"/>
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			<ul class="menu"><!--ng-controller="NavCtrl"-->
+			<ul class="menu" data-ng-controller="featuresCTRL">
 		<li class="navItems aboutNav"><a ng-href="#/about">About</a></li>
 		<li class="dividers"></li>
 		<li class="navItems techNav"><a ng-href="#/tech">Tech</a></li>
 		<li class="dividers"></li>
-		<li class="navItems featureNav"><a ng-href="#/features">Features</a></li>
+		<li class="navItems featureNav" ng-click="showFeats()"><a ng-href="#/features">Features</a></li>
 		<li class="dividers"></li>
 		<li class="navItems tourNav"><a ng-href="#/tour">Tour</a></li>
 		<li class="dividers"></li>
@@ -72,6 +72,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/lightbox.min.js"></script>
 <script src="js/angular.min.js"></script>
 <script src="js/angular-animate.min.js"></script>
 <script src="js/angular-sanitize.min.js"></script>

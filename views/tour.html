@@ -1,3 +1,17 @@
-<div class="containers">
-	<h3>TOUR</h3>
+<div class="containers" id="tourCon">
+	<h1>Tour</h1>
+	<ul>
+		<li data-ng-repeat="img in Imgs">
+			<a ng-href="{{img.LG}}" data-lightbox="tour" data-title="{{img.Desc}}">
+				<div>
+					<object data="{{img.smSVG}}">
+						<img data-ng-src="{{img.smPNG}}" alt="{{img.Title}}"/>
+					</object>
+				</div>
+				<object class="tourContent" data="{{img.svgHover}}">
+					<img data-ng-src="{{img.pngHover}}" alt="{{img.Title}}"/>
+				</object>
+			</a>
+		</li>
+	</ul>
 </div>
