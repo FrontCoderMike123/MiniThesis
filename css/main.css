@@ -680,6 +680,11 @@ ul.shots-list li:hover span.shots-content {
   position: relative;
 }
 
+#tourCon li object, #tourCon li img
+{
+  width: 100%!important;
+}
+
 #tourCon li:first-child
 {
   margin-bottom: 1%;
@@ -1350,6 +1355,153 @@ body:after {
   }
   
   /*lightbox*/
+  
+  /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: .8em;
+    padding: 15px 0;
+  }
+  
+  /*Feat Page*/
+  
+  /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 5px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 80%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.2em;
+    padding: 5px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: .95em;
+    padding: 10px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: .9em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
+  
+  
 }
 
 /*Android*/
@@ -1551,6 +1703,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: .8em;
+    padding: 15px 0;
+  }
+  
+  /*Feat Page*/
+  
+  /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 5px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 80%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.2em;
+    padding: 5px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: .95em;
+    padding: 10px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: .9em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*iPhone4*/
@@ -1752,6 +2049,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+  /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 5px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 80%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.2em;
+    padding: 5px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: .95em;
+    padding: 10px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: .9em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Blackberry*/
@@ -1957,6 +2399,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+  /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 5px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 60%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Device*/
@@ -2162,6 +2749,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+  /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 10px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 60%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Galaxy S*/
@@ -2365,6 +3097,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 10px;
+    width: 100px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 50%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Kindle*/
@@ -2546,6 +3423,151 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 10px;
+    width: 110px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  
+  #devCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 45%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Nook Tablet*/
@@ -2727,6 +3749,141 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 100%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+  }
+  
+  #featCon div
+  {
+    display: block;
+    width: 100%;
+  }
+  
+  #featCon li
+  {
+    font-size: 1.2em;
+    padding: 20px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 10px;
+    width: 110px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 60%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Apple Ipad*/
@@ -2908,6 +4065,138 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 95%;
+    padding: 0 0 10px 0;
+  }
+  
+  #featCon div
+  {
+    width: 33%;
+    margin: 0;
+  }
+  
+  #featCon li
+  {
+    font-size: .8em;
+    padding: 15px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 8px;
+    width: 130px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 45%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  
+  #jobPlans li
+  {
+    min-height: auto;
+  }
+  
+  #jobPlans li:nth-child(even) > .NUM
+  {
+    position: static;
+    width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans li:nth-child(odd) > .NUM
+  {
+    position: static;
+     width: 100%;
+    padding: 0;
+    height: auto;
+    font-size: 3em;
+  }
+  
+  #jobPlans object, #jobPlans img
+  {
+   max-width: 150px;
+    margin: 20px 0;
+  }
+  
+  #jobPlans p
+  {
+    position: static;
+    font-size: 1.3em;
+    border-bottom: 2px solid white;
+  }
+  
+  #finalDiv
+  {
+    min-height: auto;
+  }
+  
+  #finalDiv p
+  {
+    position: static;
+    font-size: 1.2em;
+  }
+  
+  #responsiveImg
+  {
+    max-width: 96%;
+    padding: 0 2%;
+  }
+  
+  /*Dev Page*/
 }
 
 /*Desktop1*/
@@ -3051,6 +4340,84 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 95%;
+    padding: 0 0 10px 0;
+  }
+  
+  #featCon div
+  {
+    width: 33%;
+    margin: 0;
+  }
+  
+  #featCon li
+  {
+    font-size: .8em;
+    padding: 15px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 8px;
+    width: 150px;
+  }
+  
+  /*Tour Page*/
+  
+  /*Dev Page*/
+  #myDiv
+  {
+    position: static;
+    position: relative;
+    left: 0!important;
+  width: 35%;
+  margin: auto;
+  display: block;
+    margin-bottom: 10px;
+  }
+  
+  #myDiv h3
+  {
+  font-size: 1em;
+  }
+  
+  #myInfo div
+  {
+    width: 100%;
+  }
+  
+  #myInfo div span
+  {
+    width: 90%;
+    font-size: 1.4em;
+    padding: 10px 0;
+  }
+  
+  #myInfo div p, #myInfo div a
+  {
+    font-size: 1.2em;
+    padding: 15px 0;
+  }
+  
+  .left, .right
+  {
+    float: none;
+  }
+  /*Dev Page*/
 }
 
 /*Desktop2*/
@@ -3135,6 +4502,43 @@ body:after {
   }
   
   /*lightbox*/
+  
+   /*Feat Page*/
+  
+  #featCon
+  {
+    width: 90%;
+    padding: 0 0 10px 0;
+  }
+  
+  #featCon div
+  {
+    width: 33%;
+    margin: 0;
+  }
+  
+  #featCon li
+  {
+    font-size: .8em;
+    padding: 15px 0;
+  }
+  
+  /*Feat Page*/
+  
+   /*Tour Page*/
+  
+  #tourCon
+  {
+    padding: 0;
+  }
+  
+  #tourCon li
+  {
+    margin: 0 15px;
+    width: 200px;
+  }
+  
+  /*Tour Page*/
   
 }
 
