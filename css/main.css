@@ -266,6 +266,11 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   border-color: white;
 }
 
+.break
+{
+  display: block;
+}
+
 footer
 {
   position: absolute;
@@ -383,6 +388,27 @@ footer li
   box-shadow: inset 0 -5px 5px rgba(0,102,153,.5),inset 0 2px 5px rgba(0,102,153,.5);
 }
 
+.mobileText
+{
+  display: none;
+  background-color: #006699;
+  padding: 15px 0;
+  color: white;
+}
+
+.mobileText h3
+{
+  color: #ffcc00;
+  border-bottom: thin solid #ffcc00;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.mobileText p
+{
+  padding: 0 10px;
+}
+
 .infoText
 {
   position: absolute;
@@ -486,8 +512,6 @@ ul.img-list li {
   margin: 0 35px;
   width: 15%;
   cursor: pointer;
-  overflow: hidden;
-  overflow: hidden;
 }
 
 ul.img-list li:last-child
@@ -938,6 +962,7 @@ body:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
   display: none;
+  width: 100%!important;
 }
 
 #lightbox,.lightbox
@@ -1128,1426 +1153,1988 @@ body:after {
 
 /*My Phone*/
 @media only screen and (max-width: 240px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-  }
-  
-  header li
+  /*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    border-radius: 0px;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    width: 100%;
+    float: none;
+    padding: 5px 0;
+    border-bottom: thin solid white;
+  }
+  
+  header ul li a
+  {
+    font-size: 1em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 15px center;
+  }
+  
+  header ul li:last-child
+  {
+    border-bottom: none;
+  }
+  
+  .dividers
+  {
+    display: none;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
+    text-align: center;
+    font-size: .7em;
     line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: .9em;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.5em;
+    padding: 10px 0;
   }
   
   #techCon p
   {
-    font-size: 1em;
+    font-size: 1.1em;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0;
   }
   
-  span.text-content
-  {
-    padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
-    display: block;
-  }
-  
-  #featCon
-  {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
-  }
-  
-  #featCon h1
+  ul.img-list li:last-child
   {
     margin: 0;
-    padding: 8px 0;
-    border:none;
   }
   
-  #featCon div
+  .text-content
   {
-    width: 100%;
-    border-radius: 0!important;
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
+  {
+    padding: 0!important;
+    width: 100%!important;
+    border-radius: 10px;
   }
   
-  .feat li
+  .lb-loader
   {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #screenShots
+  .lb-cancel
   {
-    display: none!important;
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
   }
   
-  #devCon
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    padding: 0;
-    width: 100%;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #devCon h1
+  .lb-dataContainer
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    left: 0!important;
+    width: 100%!important;
+    padding: 3% 0;
   }
   
-  #selfHolder
+  .lb-data .lb-caption
   {
-    width: 100%;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
-    position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  #devCon p
-  {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
-  }
-  
-  #responsiveImg
-  {
-   padding: 2.5%;
-    width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*Android*/
 @media only screen and (min-width:241px) and  (max-width: 266px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    border-radius: 0px;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    width: 100%;
+    float: none;
+    padding: 5px 0;
+    border-bottom: thin solid white;
+  }
+  
+  header ul li a
+  {
+    font-size: 1em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 15px center;
+  }
+  
+  header ul li:last-child
+  {
+    border-bottom: none;
+  }
+  
+  .dividers
+  {
+    display: none;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
+    text-align: center;
+    font-size: .7em;
     line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 100px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
   }
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: .95em;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.5em;
+    padding: 10px 0;
+  }
+  
   #techCon p
   {
-    font-size: 1.05em;
+    font-size: 1.1em;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0;
   }
   
-  span.text-content
-  {
-    padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
-    display: block;
-  }
-  
-  #featCon
-  {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
-  }
-  
-  #featCon h1
+  ul.img-list li:last-child
   {
     margin: 0;
-    padding: 8px 0;
-    border:none;
   }
   
-  #featCon div
+  .text-content
   {
-    width: 100%;
-    border-radius: 0!important;
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
+  {
+    padding: 0!important;
+    width: 100%!important;
+    border-radius: 10px;
   }
   
-  .feat li
+  .lb-loader
   {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #screenShots
+  .lb-cancel
   {
-    display: none!important;
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
   }
   
-   #devCon
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    padding: 0;
-    width: 100%;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #devCon h1
+  .lb-dataContainer
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    left: 0!important;
+    width: 100%!important;
+    padding: 3% 0;
   }
   
-  #selfHolder
+  .lb-data .lb-caption
   {
-    width: 100%;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
-    position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  #devCon p
-  {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
-  }
-  
-  #responsiveImg
-  {
-   padding: 2.5%;
-    width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*iPhone4*/
 @media only screen and (min-width: 267px) and (max-width: 320px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    border-radius: 0px;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    width: 100%;
+    float: none;
+    padding: 5px 0;
+    border-bottom: thin solid white;
+  }
+  
+  header ul li a
+  {
+    font-size: 1em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 15px center;
+  }
+  
+  header ul li:last-child
+  {
+    border-bottom: none;
+  }
+  
+  .dividers
+  {
+    display: none;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    text-align: center;
+    font-size: .85em;
+    line-height: 25px;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 110px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
   }
-
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: .95em;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.5em;
+    padding: 10px 0;
+  }
+  
   #techCon p
   {
-    font-size: 1.05em;
+    font-size: 1.1em;
+    padding: 0 10px;
+    margin: 10px 0 0 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
     width: 100%;
-    margin: 0 0 10px 0;
+    margin: 0;
   }
   
-  span.text-content
-  {
-    padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
-    display: block;
-  }
-  
-  #featCon
-  {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
-  }
-  
-  #featCon h1
+  ul.img-list li:last-child
   {
     margin: 0;
-    padding: 8px 0;
-    border:none;
   }
   
-  #featCon div
+  .text-content
   {
-    width: 100%;
-    border-radius: 0!important;
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
+  {
+    padding: 0!important;
+    width: 100%!important;
+    border-radius: 10px;
   }
   
-  .feat li
+  .lb-loader
   {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #screenShots
+  .lb-cancel
   {
-    display: none!important;
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
   }
   
-   #devCon
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    padding: 0;
-    width: 100%;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #devCon h1
+  .lb-dataContainer
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    left: 0!important;
+    width: 100%!important;
+    padding: 3% 0;
   }
   
-  #selfHolder
+  .lb-data .lb-caption
   {
-    width: 100%;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
-    position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  #devCon p
-  {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
-  }
-  
-  #responsiveImg
-  {
-   padding: 2.5%;
-    width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*Blackberry*/
 @media only screen and (min-width: 321px) and (max-width: 360px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    border-radius: 0px;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 60px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: .7em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: 1em;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
   }
   
   #techCon p
   {
-    font-size: 1em;
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
-    width: 30%;
-    margin: 0 5px 5px 5px;
+    width: 100%;
+    margin: 0;
   }
   
-  span.text-content
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
   {
     padding: 0;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
+  }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
+  }
+  
+  .lb-cancel
+  {
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
+  }
+  
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
+  {
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
+  }
+  
+  .lb-dataContainer
+  {
     position: static;
-    position: unset;
-    opacity: 1;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
+  }
+  
+  .lb-data .lb-caption
+  {
+   font-size: 1.1em;
+  }
+  
+  /*lightbox*/
+}
+
+/*Device*/
+@media only screen and (min-width:361px) and (max-width:416px){
+/*main importants*/
+  header .logo
+  {
+    display: block;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
+  }
+  
+  header .menu-icon
+  {
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
     display: block;
   }
   
-  #featCon
-  {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
-  }
-  
-  #featCon h1
-  {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
-  }
-  
-  #featCon div
-  {
-    width: 100%;
-    border-radius: 0!important;
-  }
-  
-  .feat li
-  {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
-  }
-  
-  #screenShots
-  {
-    display: none!important;
-  }
-  
-   #devCon
-  {
-    padding: 0;
-    width: 100%;
-  }
-  
-  #devCon h1
-  {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
-  }
-  
-  #selfHolder
-  {
-    width: 100%;
-    float: none;
-  }
-  
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
+  header .menu
   {
     width: 100%;
     float: none;
     margin: 0;
-    border-radius: 0;
   }
   
-  #devCon li
+  header ul li
   {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
-    position: static;
-    display: block;
-    width: 100%;
+   display: block;
     padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    width: 19.6%;
   }
   
-  #devCon p
+  .dividers
+  {
+    height: 60px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: .7em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 10px center;
+  }
+  
+  footer ul
+  {
+    width: 100%;
+  }
+  
+  footer li
+  {
+    float: none;
+    display: inline-block;
+    margin:  5px 10px;
+  }
+  
+  footer p
+  {
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    width: 100%;
+  }
+  
+ #padding
+  {
+    padding-bottom: 120px;
+  }
+  
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
+  {
+    margin:0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: 1em;
+  }
+  
+  /*About Page*/
+  
+   /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
+  }
+  
+  ul.img-list li
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
   {
     padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
+    width: 92%!important;
+    border-radius: 10px;
   }
   
-  #responsiveImg
+  .lb-image
   {
-   padding: 2.5%;
-    width: 95%;
+    display: block;
+    margin: auto;
   }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
+  }
+  
+  .lb-cancel
+  {
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
+  }
+  
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
+  {
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
+  }
+  
+  .lb-dataContainer
+  {
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
+  }
+  
+  .lb-data .lb-caption
+  {
+   font-size: 1.1em;
+  }
+  
+  /*lightbox*/
 }
 
 /*Galaxy S*/
-@media only screen and (min-width: 415px) and (max-width: 480px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  header li
+@media only screen and (min-width: 417px) and (max-width: 480px) {
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    width: 25%;
-    float: left;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 65px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: .9em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin: 10px 50px;;
+    background-size: 150px;
+    width: 220px;
+    height: 220px;
+  }
+  
+  .infoText
+  {
+    display: none;
+  }
+  
+  .mobileText
+  {
+    display: block;
+  }
+  
+  .mobileText h3
+  {
+    font-size: 1.5em;
+  }
+  
+  .mobileText p
+  {
+    font-size: 1em;
+  }
+  
+  /*About Page*/
+  
+   /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
   }
   
   #techCon p
   {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
-    width: 30%;
-    margin: 0 5px 5px 5px;
+    width: 100%;
+    margin: 0;
   }
   
-  span.text-content
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
   {
     padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
     display: block;
+    margin: auto;
+  }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #featCon
+  .lb-cancel
   {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
+    width: 100px;
+    height: 50px;
+    background-size: 50px;
   }
   
-  #featCon h1
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #featCon div
+  .lb-dataContainer
   {
-    width: 100%;
-    border-radius: 0!important;
-  }
-  
-  .feat li
-  {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
-  }
-  
-  #screenShots
-  {
-    display: none!important;
-  }
-  
-   #devCon
-  {
-    padding: 0;
-    width: 100%;
-  }
-  
-  #devCon h1
-  {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
-  }
-  
-  #selfHolder
-  {
-    width: 100%;
-    float: none;
-  }
-  
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
     position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
-  #devCon p
+  .lb-data .lb-caption
   {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #responsiveImg
-  {
-   padding: 2.5%;
-    max-width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*Kindle*/
 @media only screen and (min-width: 481px) and (max-width: 533px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    width: 25%;
-    float: left;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 65px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: 1em;
+  }
+  
+  .navItems
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px 20px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin: 10px 50px;;
+    background-size: 300px;
+  }
+  
+  /*About Page*/
+  
+   /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
   }
   
   #techCon p
   {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
-    width: 30%;
-    margin: 0 5px 5px 5px;
+    width: 100%;
+    margin: 0;
   }
   
-  span.text-content
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
   {
     padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
     display: block;
+    margin: auto;
+  }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #featCon
+  .lb-cancel
   {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
+    width: 100px;
+    height: 80px;
+    background-size: 100px;
   }
   
-  #featCon h1
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #featCon div
+  .lb-dataContainer
   {
-    width: 100%;
-    border-radius: 0!important;
-  }
-  
-  .feat li
-  {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
-  }
-  
-  #screenShots
-  {
-    display: none!important;
-  }
-  
-   #devCon
-  {
-    padding: 0;
-    width: 100%;
-  }
-  
-  #devCon h1
-  {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
-  }
-  
-  #selfHolder
-  {
-    width: 100%;
-    float: none;
-  }
-  
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
     position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
-  #devCon p
+  .lb-data .lb-caption
   {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #responsiveImg
-  {
-   padding: 2.5%;
-   max-width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    width: 25%;
-    float: left;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
+  header .menu-icon
   {
-    position: static;
-    position: unset;
-    text-align: center;
+    float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
+  }
+  
+  header .menu
+  {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+  
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 65px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: 1.1em;
+  }
+  
+  .navItems
+  {
+    background-size: 35px;
+    background-position: top 10px center;
   }
   
   footer ul
   {
-    float: none;
+    width: 100%;
   }
   
   footer li
   {
-    display: inline-block;
-    margin:5px 20px;
     float: none;
+    display: inline-block;
+    margin:  5px 10px;
   }
   
   footer p
   {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .break
-  {
-    display: block;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    width: 100%;
   }
   
   #padding
   {
-    padding-bottom: 0;
+    padding-bottom: 120px;
   }
   
-  .containers
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-    margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
+    margin: 10px 50px;;
+    background-size: 300px;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
   }
   
   #techCon p
   {
-    font-size: 1.1em;
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
   }
   
   ul.img-list li
   {
-    width: 30%;
-    margin: 0 5px 5px 5px;
+    width: 50%;
+    margin: 0;
   }
   
-  span.text-content
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
   {
     padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
     display: block;
+    margin: auto;
+  }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #featCon
+  .lb-cancel
   {
-    padding: 0;
-    width: 100%;
-    border-bottom: thin solid #ffcc00;
+    width: 100px;
+    height: 80px;
+    background-size: 100px;
   }
   
-  #featCon h1
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #featCon div
+  .lb-dataContainer
   {
-    width: 100%;
-    border-radius: 0!important;
-  }
-  
-  .feat li
-  {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
-  }
-  
-  #screenShots
-  {
-    display: none!important;
-  }
-  
-   #devCon
-  {
-    padding: 0;
-    width: 100%;
-  }
-  
-  #devCon h1
-  {
-    margin: 0;
-    padding: 8px 0;
-    border:none;
-  }
-  
-  #selfHolder
-  {
-    width: 100%;
-    float: none;
-  }
-  
-  #selfHolder img
-  {
-    border-radius: 0;
-  }
-  
-  #devCon ul
-  {
-    width: 100%;
-    float: none;
-    margin: 0;
-    border-radius: 0;
-  }
-  
-  #devCon li
-  {
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    margin-bottom: 10px;
-  }
-  
-  .number
-  {
-   position: unset;
     position: static;
-    display: block;
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
-  #devCon p
+  .lb-data .lb-caption
   {
-    padding: 0;
-    font-size: 1em;
-    line-height: normal;
-    float: none;
+   font-size: 1.1em;
   }
   
-  #responsiveImg
-  {
-   padding: 2.5%;
-    max-width: 95%;
-  }
+  /*lightbox*/
 }
 
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-  header
-  {
-    padding:3% 0 0 0;
-    margin-bottom: 0px;
-    overflow: hidden;
-  }
-  
-  header li
+/*main importants*/
+  header .logo
   {
     display: block;
-    padding: 5px 0;
-    width: 25%;
-    float: left;
-    border: none;
+    float: none;
+    clear: both;
+    margin: auto;
+    width: 100px;
   }
   
-  footer
-  {
-    text-align: center;
-  }
-  
-  footer ul
+  header .menu-icon
   {
     float: none;
+    margin: 10px auto;
+    width: 40px;
+    clear: both;
+    display: block;
   }
   
-  footer li
+  header .menu
   {
-    display: inline-block;
-    margin:5px 20px;
+    width: 100%;
     float: none;
-  }
-  
-  footer p
-  {
-    float: none;
-    line-height: 20px;
-  }
-  
-  .containers
-  {
     margin: 0;
-    width: 98%;
-    border-radius: 0;
-    border: none;
   }
   
-  #techCon p
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 65px;
+    width: .5%;
+  }
+  
+  header ul li a
   {
     font-size: 1.1em;
   }
   
-  ul.img-list li
+  .navItems
   {
-    width: 30%;
-    margin: 0 5px 5px 5px;
+    background-size: 35px;
+    background-position: top 10px center;
   }
   
-  span.text-content
+  footer ul
   {
-    padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
-    display: block;
+    width: 100%;
   }
-
-  .feat li
+  
+  footer li
   {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
+    float: none;
+    display: inline-block;
+    margin:  5px 10px;
+  }
+  
+  footer p
+  {
+    text-align: center;
     font-size: 1em;
+    line-height: 30px;
+    width: 100%;
   }
   
-  #screenShots
+  #padding
   {
-    display: none!important;
+    padding-bottom: 120px;
   }
   
-  #devCon li
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
   {
-  padding: 20px 0 20px 5%;
+    margin: 10px 50px;;
+    background-size: 300px;
   }
   
-  .number
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
   {
-  font-size: 1.4em;
-    width: 25px;
+    font-size: 1.8em;
+    padding: 10px 0;
   }
   
-  #devCon p
+  #techCon p
   {
     font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
   }
+  
+  #techCon a
+  {
+    display: block;
+  }
+  
+  ul.img-list li
+  {
+    width: 50%;
+    margin: 0;
+  }
+  
+  ul.img-list li:last-child
+  {
+    margin: 0;
+  }
+  
+  .text-content
+  {
+    display: none;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
+  {
+    padding: 0;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
+  }
+
+  .lb-loader
+  {
+    top: 40%;
+    width: 20%;
+    left: 40%;
+  }
+  
+  .lb-cancel
+  {
+    width: 100px;
+    height: 80px;
+    background-size: 100px;
+  }
+  
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
+  {
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
+  }
+  
+  .lb-dataContainer
+  {
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
+  }
+  
+  .lb-data .lb-caption
+  {
+   font-size: 1.1em;
+  }
+  
+  /*lightbox*/
 }
 
 /*Desktop1*/
-@media only screen and (min-width: 801px) and (max-width: 980px) {
+@media only screen and (min-width: 769px) and (max-width: 980px) {
+/*main importants*/
+
+  header ul li
+  {
+   display: block;
+    padding: 5px 0;
+    width: 19.6%;
+  }
+  
+  .dividers
+  {
+    height: 70px;
+    width: .5%;
+  }
+  
+  header ul li a
+  {
+    font-size: 1.3em;
+  }
+  
+  #padding
+  {
+    padding-bottom: 60px;
+  }
+  
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
+  {
+    margin: 0 5px;
+    width: 310px;
+    height: 310px;
+    background-size: 200px;
+  }
+  
+  .infoText h3
+  {
+    font-size: 1.7em;
+  }
+  
+  .infoText p
+  {
+    font-size: 1.2em;
+  }
+  
+  /*About Page*/
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 1.8em;
+    padding: 10px 0;
+  }
+  
+  #techCon p
+  {
+    font-size: 1.2em;
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 25px;
+  }
+  
+  #techCon a
+  {
+    display: block;
+  }
   
   ul.img-list li
   {
-    width: 20%;
-    margin: 0 5px 5px 5px;
+    width: 25%;
+    margin: 0 10px 10px 10px;
+  }
+  
+  ul.img-list li:last-child
+  {
+    margin-top: 0;
   }
   
   span.text-content
   {
+    padding-top: 37%;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-outerContainer
+  {
     padding: 0;
-    position: static;
-    position: unset;
-    opacity: 1;
+    width: 92%!important;
+    border-radius: 10px;
+  }
+  
+  .lb-image
+  {
     display: block;
+    margin: auto;
   }
 
-  .feat li
+  .lb-loader
   {
-    border-radius: 0;
-    width: 98%;
-    background: none!important;
-    color: white!important;
-    padding-left: 1%;
-    margin: 0;
-    font-size: 1em;
+    top: 40%;
+    width: 20%;
+    left: 40%;
   }
   
-  #devCon li
+  .lb-cancel
   {
-  padding: 20px 0 20px 5%;
+    width: 100px;
+    height: 80px;
+    background-size: 100px;
   }
   
-  .number
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
   {
-  font-size: 1.4em;
-    width: 25px;
+    background-size: 30px;
+    background-color: rgba(255,255,255,.2);
   }
   
-  #devCon p
+  .lb-dataContainer
   {
-    font-size: 1.2em;
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
+  
+  .lb-data .lb-caption
+  {
+   font-size: 1.1em;
+  }
+  
+  /*lightbox*/
 }
 
 /*Desktop2*/
 @media only screen and (min-width: 981px) and (max-width: 1280px) {
+  /*main importants*/
+  
+  #padding
+  {
+    padding-bottom: 60px;
+  }
+  
+  /*main importants*/
+  
+  /*About Page*/
+   
+  #aboutButtonRow button
+  {
+    margin: 0 15px;
+    width: 350px;
+    height: 350px;
+    background-size: 200px;
+  }
+  
+  .infoText h3
+  {
+    font-size: 2em;
+  }
+  
+  .infoText p
+  {
+    font-size: 1.4em;
+  }
+  
+  /*TECH PAGE*/
+  
+  #techCon h1, #featCon h1, #tourCon h1, #devCon h1
+  {
+    font-size: 2em;
+    padding: 10px 0;
+  }
+  
+  #techCon p
+  {
+    padding: 0 40px;
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  
+  #techCon a
+  {
+    display: block;
+  }
+  
+  ul.img-list li
+  {
+    width: 20%;
+    margin: 0 10px 10px 10px;
+  }
+  
+  ul.img-list li:last-child
+  {
+    margin-top: 0;
+  }
+  
+  span.text-content
+  {
+    padding-top: 37%;
+  }
+  /*TECH PAGE*/
+  
+  /*lightbox*/
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
+  }
+
+  .lb-nav a.lb-next,.lb-nav a.lb-prev
+  {
+    background-color: rgba(255,255,255,.2);
+  }
+  
+  /*lightbox*/
   
 }
 
