@@ -5,43 +5,47 @@ miniSite.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$
 	$stateProvider.state('About',{
 		url: '/about',
 		templateUrl: 'views/about.html',
-		controller: 'aboutCTRL'
+		controller: 'aboutCTRL',
+		activeNav: 'about'
 	});
 	$stateProvider.state('Tech',{
 		url: '/tech',
 		templateUrl: 'views/tech.html',
-		controller: 'techCTRL'
+		controller: 'techCTRL',
+		activeNav: 'tech'
 	});
 	$stateProvider.state('Features',{
 		url: '/features',
 		templateUrl: 'views/features.html',
-		controller: 'featuresCTRL'
+		controller: 'featuresCTRL',
+		activeNav: 'features'
 	});
 	$stateProvider.state('Tour',{
 		url: '/tour',
 		templateUrl: 'views/tour.html',
-		controller: 'tourCTRL'
+		controller: 'tourCTRL',
+		activeNav: 'tour'
 	});
 	$stateProvider.state('Developer',{
 		url: '/developer',
 		templateUrl: 'views/developer.html',
-		controller: 'developerCTRL'
+		controller: 'developerCTRL',
+		activeNav: 'developer'
 	});
 	$urlRouterProvider.otherwise('/about');
 }]);//CONGIF
 
 //CONTROLLERS
 
-//You will see here that i TRIEEDDD!!!!! to make an active nav... things were messing up...
-//either the sections and divs would float above eachother .... or the nav would turn on and off....
-//too see for yourself... just add in the UL in index.html. ng-controller="NavCtrl"... see for yourslef
-
-miniSite.controller('navCTRL',['$scope','$http','$location',function($scope,$http,$location){
-
-}]);
-
-miniSite.controller('homeCTRL',['$scope','$http','$location',function($scope,$http,$location){
-
+miniSite.controller('homeCTRL',['$scope','$state',function($scope,$state){
+	$scope.$state = $state;
+	$scope.links = [
+		{ 'Path':'about', 'Name':'About', 'Type':'about', 'Back':'aboutNav' },
+		{ 'Path':'tech', 'Name':'Tech', 'Type':'tech', 'Back':'techNav' },
+		{ 'Path':'features', 'Name':'Features', 'Type':'features', 'Back':'featureNav' },
+		{ 'Path':'tour', 'Name':'Tour', 'Type':'tour', 'Back':'tourNav' },
+		{ 'Path':'developer', 'Name':'Developer', 'Type':'developer', 'Back':'devNav' }
+	];
 }]);
 
 miniSite.controller('aboutCTRL',['$scope','$http',function($scope,$http){
@@ -67,11 +71,6 @@ miniSite.controller('featuresCTRL',['$scope','$http',function($scope,$http){
 	$http.get('features.json').success(function(data) {
 		$scope.features = data.Features;
 	});
-
-	$scope.showFeats = function(){
-		TweenMax.staggerFrom(".feats",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
-	};
-
 }]);
 
 miniSite.controller('tourCTRL',['$scope','$http',function($scope,$http){

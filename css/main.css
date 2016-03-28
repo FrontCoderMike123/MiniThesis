@@ -113,7 +113,7 @@ header ul li a
 
 header ul li a:hover
 {
-  font-weight: bold;
+  color: white;
 }
 
 header .logo
@@ -126,9 +126,13 @@ header .menu
 {
   transition: max-height: .2s ease;
   max-height: 0;
+  position: absolute;
+  left: 10%;
+  top: 0;
   width: 80%;
-  float: left;
   margin-left: 1%;
+  padding-top: 10px;
+  background-color: #006699;
 }
 
 header .menu-icon
@@ -149,6 +153,11 @@ header .menu-icon .navicon
   position: relative;
   transition: background .2s ease;
   width: 50px;
+}
+
+label.menu-icon
+{
+  width: 50px!important;
 }
 
 header .menu-icon .navicon:before,
@@ -188,7 +197,7 @@ header .menu-btn {
 }
  
 header .menu-btn:checked ~ .menu {
-  max-height: 100%;
+  min-height: 150px;
 }
  
 header .menu-btn:checked ~ .menu-icon .navicon {
@@ -207,6 +216,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
 header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   background-color: #fff;
   top: 0;
+  left: 0;
 }
 
 .aboutNav
@@ -216,6 +226,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .aboutNav:hover
 {
+  background-image: url('../images/icons/homeHover.svg');
 }
 
 .techNav
@@ -225,6 +236,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .techNav:hover
 {
+  background-image: url('../images/icons/techHover.svg');
 }
 
 .featureNav
@@ -234,6 +246,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .featureNav:hover
 {
+  background-image: url('../images/icons/featuresHover.svg');
 }
 
 .tourNav
@@ -243,6 +256,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .tourNav:hover
 {
+  background-image: url('../images/icons/tourHover.svg');
 }
 
 .devNav
@@ -252,6 +266,7 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 
 .devNav:hover
 {
+  background-image: url('../images/icons/developerHover.svg');
 }
 
 .navItems
@@ -260,10 +275,67 @@ header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   background-position: top 5px center;
 }
 
-.active
+.active {
+    color: white;
+}
+
+.aboutNav .active
 {
-  background-color: #ffcc00;
-  border-color: white;
+  background-image: url('../images/icons/homeHover.svg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+}
+
+.techNav .active
+{
+  background-image: url('../images/icons/techHover.svg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+}
+
+.featureNav .active
+{
+  background-image: url('../images/icons/featuresHover.svg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+}
+
+.tourNav .active
+{
+  background-image: url('../images/icons/tourHover.svg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+}
+
+.devNav .active
+{
+  background-image: url('../images/icons/developerHover.svg');
+  background-repeat: no-repeat;
+  background-position: top 5px center;
+}
+
+#intro
+{
+  position: absolute;
+  top: 0;
+  left: 32.5%;
+  width: 35%;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1em;
+  color: #ffcc00;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+
+.welcome
+{
+  font-family: 'Lato', sans-serif;
+  display: block;
+  font-size: 2em;
+  padding-bottom: 8px;
+  border-bottom: thin solid white;
 }
 
 .break
@@ -358,7 +430,7 @@ footer li
   display: block;
   clear: both;
   overflow: hidden;
-  padding: 2% 0 0 0;
+  padding:2% 0;
 }
 
 #aboutButtonRow
@@ -1159,6 +1231,20 @@ body:after {
 /*My Phone*/
 @media only screen and (max-width: 240px) {
   /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -1181,7 +1267,9 @@ body:after {
   {
     width: 100%;
     float: none;
+    position: static;
     margin: 0;
+    padding: 0;
   }
   
   header ul li
@@ -1202,6 +1290,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 15px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   header ul li:last-child
@@ -1344,14 +1442,24 @@ body:after {
   
   .lb-dataContainer
   {
-    left: 0!important;
-    width: 100%!important;
-    padding: 3% 0;
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
   .lb-data .lb-caption
   {
    font-size: 1.1em;
+  }
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
   }
   
   /*lightbox*/
@@ -1507,6 +1615,20 @@ body:after {
 /*Android*/
 @media only screen and (min-width:241px) and  (max-width: 266px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1.1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -1530,6 +1652,8 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    position: static;
+    padding: 0;
   }
   
   header ul li
@@ -1550,6 +1674,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 15px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   header ul li:last-child
@@ -1692,14 +1826,24 @@ body:after {
   
   .lb-dataContainer
   {
-    left: 0!important;
-    width: 100%!important;
-    padding: 3% 0;
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
   .lb-data .lb-caption
   {
    font-size: 1.1em;
+  }
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
   }
   
   /*lightbox*/
@@ -1853,6 +1997,20 @@ body:after {
 /*iPhone4*/
 @media only screen and (min-width: 267px) and (max-width: 320px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: .8em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -1876,6 +2034,8 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    padding: 0;
+    position: static;
   }
   
   header ul li
@@ -1896,6 +2056,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 15px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 10px center;
   }
   
   header ul li:last-child
@@ -2038,14 +2208,24 @@ body:after {
   
   .lb-dataContainer
   {
-    left: 0!important;
-    width: 100%!important;
-    padding: 3% 0;
+    position: static;
+    margin: auto;
+    border-radius: 10px;
+    background: white;
+    margin-top: 10px;
+    width: 87%!important;
+    padding: 3%;
   }
   
   .lb-data .lb-caption
   {
    font-size: 1.1em;
+  }
+  
+  .lb-image
+  {
+    display: block;
+    margin: auto;
   }
   
   /*lightbox*/
@@ -2199,6 +2379,20 @@ body:after {
 /*Blackberry*/
 @media only screen and (min-width: 321px) and (max-width: 360px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: .8em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -2222,6 +2416,9 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    padding: 0;
+    position: static;
+    min-height: 0!important;
   }
   
   header ul li
@@ -2246,6 +2443,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -2549,6 +2756,21 @@ body:after {
 /*Device*/
 @media only screen and (min-width:361px) and (max-width:416px){
 /*main importants*/
+  
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: .8em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -2572,6 +2794,9 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    padding: 0;
+    position: static;
+    min-height: 0!important;
   }
   
   header ul li
@@ -2596,6 +2821,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -2899,6 +3134,20 @@ body:after {
 /*Galaxy S*/
 @media only screen and (min-width: 417px) and (max-width: 480px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -2922,6 +3171,9 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    padding: 0;
+    position: static;
+    min-height: 0!important;
   }
   
   header ul li
@@ -2946,6 +3198,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -3247,6 +3509,20 @@ body:after {
 /*Kindle*/
 @media only screen and (min-width: 481px) and (max-width: 533px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -3270,19 +3546,16 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    padding: 0;
+    position:static;
+    min-height: 0!important;
   }
   
   header ul li
   {
    display: block;
     padding: 5px 0;
-    width: 19.6%;
-  }
-  
-  .dividers
-  {
-    height: 65px;
-    width: .5%;
+    width: 20%;
   }
   
   header ul li a
@@ -3294,6 +3567,16 @@ body:after {
   {
     background-size: 30px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 30px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -3573,6 +3856,20 @@ body:after {
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -3596,19 +3893,16 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    position: static;
+    padding: 0;
+    min-height: 0!important;
   }
   
   header ul li
   {
    display: block;
     padding: 5px 0;
-    width: 19.6%;
-  }
-  
-  .dividers
-  {
-    height: 65px;
-    width: .5%;
+    width: 20%;
   }
   
   header ul li a
@@ -3620,6 +3914,16 @@ body:after {
   {
     background-size: 35px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 35px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -3889,6 +4193,20 @@ body:after {
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
 /*main importants*/
+  #intro
+  {
+   position: static;
+    display: block;
+    width: 100%;
+    clear: both;
+    font-size: 1em;
+    padding: 5px 0;
+  }
+  
+  header .menu-btn:checked ~ .menu {
+    max-height: 100%;
+  }
+  
   header .logo
   {
     display: block;
@@ -3912,19 +4230,16 @@ body:after {
     width: 100%;
     float: none;
     margin: 0;
+    position: static;
+    padding: 0;
+    min-height: 0!important;
   }
   
   header ul li
   {
    display: block;
     padding: 5px 0;
-    width: 19.6%;
-  }
-  
-  .dividers
-  {
-    height: 65px;
-    width: .5%;
+    width: 20%;
   }
   
   header ul li a
@@ -3936,6 +4251,16 @@ body:after {
   {
     background-size: 35px;
     background-position: top 10px center;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-size: 35px;
+    background-position: top 5px center;
   }
   
   footer ul
@@ -4203,6 +4528,20 @@ body:after {
 @media only screen and (min-width: 769px) and (max-width: 980px) {
 /*main importants*/
 
+  
+  header .menu
+  {
+    width: 75%;
+    left: 15%;
+  }
+  
+  #intro
+  {
+    font-size: 1em;
+    width: 50%;
+    left: 25%;
+  }
+
   header ul li
   {
    display: block;
@@ -4224,6 +4563,15 @@ body:after {
   #padding
   {
     padding-bottom: 60px;
+  }
+  
+  .aboutNav .active,
+  .techNav .active,
+  .featureNav .active,
+  .tourNav .active,
+  .devNav .active
+  {
+    background-position: top 0px center;
   }
   
   /*main importants*/
@@ -4423,6 +4771,12 @@ body:after {
 /*Desktop2*/
 @media only screen and (min-width: 981px) and (max-width: 1280px) {
   /*main importants*/
+  
+  #intro
+  {
+    width: 40%;
+    left: 30%;
+  }
   
   #padding
   {

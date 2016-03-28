@@ -15,7 +15,7 @@
 <body data-ng-app="miniSite">
 	<h2 class="hidden">Welcome to Easy Eats</h2>
 
-	<section class="mainContainer" ng-controller="navCTRL">
+	<section class="mainContainer" ng-controller="homeCTRL">
 
 		<div id="padding"><!--keep footer down-->
 
@@ -28,20 +28,17 @@
 					</object>
 				</div>
 			</a>
+
+			<h5 id="intro"><span class="welcome">Welcome to Easy Eats</span>Where Finding Food Has Never Been Easier!</h5>
+
 			<nav>
 			<h2 class="hidden">Navigation</h2>
 			<input class="menu-btn" type="checkbox" id="menu-btn"/>
 			<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-			<ul class="menu" data-ng-controller="featuresCTRL">
-		<li class="navItems aboutNav"><a ng-href="#/about">About</a></li>
-		<li class="dividers"></li>
-		<li class="navItems techNav"><a ng-href="#/tech">Tech</a></li>
-		<li class="dividers"></li>
-		<li class="navItems featureNav" ng-click="showFeats()"><a ng-href="#/features">Features</a></li>
-		<li class="dividers"></li>
-		<li class="navItems tourNav"><a ng-href="#/tour">Tour</a></li>
-		<li class="dividers"></li>
-		<li class="navItems devNav"><a ng-href="#/developer">Developer</a></li>
+			<ul class="menu">
+				<li data-ng-repeat="link in links" class="navItems {{link.Back}}">
+		<a href="#/{{link.Path}}" ng-class="{active: $state.current.activeNav == link.Type}">{{link.Name}}</a>
+				</li>
 			</ul>
 			</nav>
 		</header>
